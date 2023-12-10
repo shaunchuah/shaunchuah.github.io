@@ -4,7 +4,7 @@ date: 2022-04-28T18:29:04Z
 # weight: 1
 # aliases: ["/first"]
 tags: []
-showToc: false
+showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
@@ -30,9 +30,6 @@ cover:
     hidden: true # only hide on current single page
 ---
 
-
-Slightly overdue post - have been busy running other things but here's the promised guide on orchestrating a nextflow pipeline from a cloud server.
-
 ## Why bother setting up another server to manage your Nextflow pipeline?
 
 1. **Avoid premature termination of the pipeline**. When you run a Nextflow pipeline from your local computer, your local computer is managing the tasks and communicating with Azure as jobs are completed. Depending on the complexity of your pipeline, this may be a long time (couple of days!). If your wi-fi router accidentally comes unplug or the connection is broken, the pipeline will terminate prematurely. While you could recover from this using `-resume`, you can avoid the risks of disconnection by using a cloud server, which is designed to run 24/7, to orchestrate this.
@@ -40,15 +37,6 @@ Slightly overdue post - have been busy running other things but here's the promi
 2. **Location independence**. You can start a pipeline from home (wfh being the consequence of covid) and perhaps go elsewhere and check in later.
 
 3. **Free up your local computer for other things**. You do not have to keep your local computer running Nextflow constantly - just start the pipeline in the cloud and continue on with your usual day.
-
-## Table of Contents
-
-1. [Obtaining a cloud server](#1-obtaining-a-cloud-server)
-2. [Logging in to the server](#2-logging-in-to-the-server)
-3. [Installation](#3-installation)
-4. [Check Nextflow works](#4-check-nextflow-works)
-5. [Clone and run the pipeline](#5-clone-and-run-the-pipeline)
-6. [Use screen to launch long-running pipelines](#6-use-screen-to-launch-long-running-pipelines)
 
 ## 1. Obtaining a cloud server
 

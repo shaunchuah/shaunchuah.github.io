@@ -55,23 +55,12 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: Hi there
-    subtitle: "Welcome to my blog."
-    imageUrl: "<img location>"
-    imageWidth: 100
-    imageHeight: 100
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+    enabled: false
 
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog.
+    Content: Welcome to my blog. This serves as mainly a quick reference for myself on how I did certain things but I hope you find some of it useful!
 
   socialIcons:
     - name: twitter
