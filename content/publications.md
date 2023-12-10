@@ -3,18 +3,16 @@ title: 'Publications'
 # weight: 1
 # aliases: ["/first"]
 tags: []
-author: "Shaun"
-showToc: true
+showToc: false
 TocOpen: false
 draft: false
-hidemeta: false
+hidemeta: true
 comments: false
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: false # to disable highlightjs
-disableShare: false
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: false
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
