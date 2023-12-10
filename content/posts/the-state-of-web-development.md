@@ -2,7 +2,7 @@
 title: 'The State of Web Development'
 date: 2021-06-29T18:01:06Z
 tags: ["web development", "javascript", "python"]
-category: ["web development"]
+categories: ["web development"]
 showToc: false
 TocOpen: false
 draft: false
