@@ -14,12 +14,24 @@ disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: false
-ShowBreadCrumbs: true
+ShowBreadCrumbs: false
 ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
+
+Circulating Cell-Free DNA in Inflammatory Bowel Disease: Liquid Biopsies with Mechanistic and Translational Implications.\
+*CS Chuah, L Fischer, GT Ho.* [Faculty Reviews 2023](https://doi.org/10.12703/r/12-14)
+
+Neutrophil-dependent Mitochondrial DNA Release Associated With Extracellular Trap Formation in Inflammatory Bowel Disease.\
+*B Drury, CS Chuah, R Hall, GR Hardisty, AG Rossi, GT Ho.* [Gastro Hep Advances 2023](https://doi.org/10.1016/j.gastha.2023.03.022)
+
+Letter: non-selective beta-blockers in cirrhosis—effect beyond portal hypertension. Authors' reply.\
+*P Dunne, D Young, CS Chuah, PC Hayes, D Tripathi, J Leithead, L Smith, D Gaya, E Forrest, AJ Stanley.* [Alimentary Pharmacology & Therapeutics 2022](https://doi.org/10.1111/apt.16982)
+
+Carvedilol versus endoscopic band ligation for secondary prophylaxis of variceal bleeding-long-term follow-up of a randomised control trial.\
+*P Dunne, D Young, CS Chuah, PC Hayes, D Tripathi, J Leithead, L Smith, D Gaya, E Forrest, AJ Stanley.* [Alimentary Pharmacology & Therapeutics 2022](https://doi.org/10.1111/apt.16901)
 
 Real-world effectiveness and safety of ustekinumab for the treatment of Crohn's disease: the Scottish ustekinumab cohort.\
 [Journal of Gastroenterology and Hepatology 2020](https://doi.org/10.1111/jgh.15390)
