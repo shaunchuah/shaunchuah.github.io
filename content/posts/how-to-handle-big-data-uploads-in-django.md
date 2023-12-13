@@ -4,7 +4,6 @@ date: 2023-12-10T18:59:15Z
 tags: []
 draft: false
 description: ""
-canonicalURL: "https://canonical.url/to/page"
 ---
 
 ## Traditional File Uploads in Django

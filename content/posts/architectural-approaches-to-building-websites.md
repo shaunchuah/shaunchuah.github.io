@@ -10,7 +10,6 @@ draft: false
 hidemeta: false
 comments: false
 description: ""
-canonicalURL: "https://canonical.url/to/page"
 disableHLJS: false # to disable highlightjs
 disableShare: false
 disableHLJS: false

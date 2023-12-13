@@ -8,7 +8,7 @@ TocOpen: false
 draft: false
 hidemeta: true
 comments: false
-canonicalURL: "https://canonical.url/to/page"
+canonicalURL: "https://shaunchuah.github.io/projects"
 disableHLJS: false # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -24,16 +24,20 @@ UseHugoToc: true
 
 ## G-Trac
 
+![g-trac screenshot](/projects/gtrac.png)
 [samples.musicstudy.uk](https://samples.musicstudy.uk)
 
 ## MUSIC Study
 
+![music study screenshot](/projects/musicstudy.png)
 [www.musicstudy.uk](https://musicstudy.uk)
 
 ## MARVEL Study
 
+![marvel study screenshot](/projects/marvelstudy.png)
 [www.marvelstudy.uk](https://marvelstudy.uk)
 
 ## ScotRight
 
+![scotright screenshot](/projects/scotright.png)
 [www.scotright.com](https://scotright.com)

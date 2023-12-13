@@ -8,7 +8,7 @@ TocOpen: false
 draft: false
 hidemeta: true
 comments: false
-canonicalURL: "https://canonical.url/to/page"
+canonicalURL: "https://shaunchuah.github.io/publications"
 disableHLJS: false # to disable highlightjs
 disableHLJS: false
 hideSummary: false
