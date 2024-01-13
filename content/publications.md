@@ -23,7 +23,7 @@ UseHugoToc: true
 
 **Formylated Peptide Receptor-1 (FPR1) mediated gut inflammation as a therapeutic target in Inflammatory Bowel Disease**\
 McAllister MJ, Hall R, Whelan RJ, Fischer LJ, Chuah CS, Cartlidge PD, Drury B, Rutherford DG, Duffin RM, Cartwright JA, Dorward DA, Rossi AG, Ho GT.\
-[Crohn's Colitis 360 2024](https://doi.org/10.1093/crocol/otae003)
+[Crohn's & Colitis 360 2024](https://doi.org/10.1093/crocol/otae003)
 
 **Circulating Cell-Free DNA in Inflammatory Bowel Disease: Liquid Biopsies with Mechanistic and Translational Implications.**\
 Chuah CS, Fischer L, Ho GT.\
