@@ -10,12 +10,8 @@ On Mac:
 brew install hugo
 ```
 
-```sh
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
-```
-
 New page
 
 ```sh
-hugo new --kind post <name>
+hugo new --kind post posts/<name>.md
 ```
