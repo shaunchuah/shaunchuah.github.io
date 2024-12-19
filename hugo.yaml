@@ -133,6 +133,6 @@ outputs:
     - JSON
 
 # https://gohugo.io/templates/embedded/#use-the-google-analytics-template
-services:
-  googleAnalytics:
-    id: G-Q9BZXJ07YY
+# services:
+#   googleAnalytics:
+#     id: G-Q9BZXJ07YY
