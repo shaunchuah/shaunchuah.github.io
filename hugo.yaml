@@ -68,7 +68,6 @@ params:
     - name: github
       url: "https://github.com/shaunchuah"
 
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
@@ -115,8 +114,7 @@ menu:
     #   name: Tags
     #   url: /tags/
     #   weight: 30
-    
-    
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -133,3 +131,8 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+# https://gohugo.io/templates/embedded/#use-the-google-analytics-template
+services:
+  googleAnalytics:
+    id: G-Q9BZXJ07YY
