@@ -60,7 +60,11 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog. This serves mainly as a quick reference for myself on how I did certain things but I hope you find some of it useful!
+    Content: >
+      Welcome to my blog. I am an academic gastroenterologist at the University of Glasgow 
+      with an interest in applying machine learning and AI to uncover the mechanisms that 
+      drive Inflammatory Bowel Disease. I am also developing an introductory course for researchers 
+      who want to pick up these skills. Check it out [here](https://shaunchuah.github.io/software_engineering_for_science/).
 
   socialIcons:
     - name: twitter
@@ -106,10 +110,15 @@ menu:
       name: Publications
       url: /publications/
       weight: 30
+    - identifier: course
+      name: Course
+      url: "https://shaunchuah.github.io/software_engineering_for_science/"
+      weight: 40
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 40
+      weight: 50
+
     # - identifier: tags
     #   name: Tags
     #   url: /tags/
