@@ -62,13 +62,12 @@ params:
     Title: "Hi there \U0001F44B"
     Content: >
       Welcome to my blog. I am an academic gastroenterologist at the University of Glasgow 
-      with an interest in applying machine learning and AI to uncover the mechanisms that 
-      drive Inflammatory Bowel Disease. I am also developing an introductory course for researchers 
+      with an interest in applying machine learning and AI in the field of Inflammatory Bowel Disease. I am also developing an introductory course for researchers 
       who want to pick up these skills. Check it out [here](https://shaunchuah.github.io/software_engineering_for_science/).
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/chershiong"
+    - name: x
+      url: "https://x.com/drshaunchuah"
     - name: github
       url: "https://github.com/shaunchuah"
 

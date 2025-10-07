@@ -22,6 +22,11 @@ ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
 
+## ChatIBD
+
+![chatibd screenshot](/projects/chatibd.png)
+[www.chatibd.com](https://chatibd.com)
+
 ## G-Trac
 
 ![g-trac screenshot](/projects/gtrac.png)
