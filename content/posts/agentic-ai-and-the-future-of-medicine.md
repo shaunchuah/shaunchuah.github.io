@@ -16,7 +16,7 @@ Boring but necessary tasks such as writing unit and integration tests, refactori
 
 Watching these agentic agents evolve over the past year naturally leads me to think about the future of LLMs in medicine, particularly in the field of inflammatory bowel disease. Two ideas stand out: **tool calling** and **agentic architectures**. These allow the coupling of probabilistic systems with deterministic systems, therefore allowing LLMs to call on external tools (which are deterministic) to perform specific tasks. This is a real game changer - it means that automating complex workflows is now possible.
 
-But before we get too far ahead of ourselves, I think the first step in any potential applications is learning to ground an LLM in up-to-date and reliable medical knowledge. Just a few years ago, when ChatGPT first came onto the scene, much criticism was levelled at its hallucinations and inaccuracies. Fast-forward to today, and things are very different. I thought it'd be fun to see if we can ground an LLM like ChatGPT in robust medical knowledge - therefore leading to the launch of ChatIBD (<www.chatibd.com>), which is really a fun, learning project to see how well this tech works. And although it is not by any means perfect, I think it is surprisingly good. It’s also a glimpse into what future clinician–AI partnerships might look like.
+But before we get too far ahead of ourselves, I think the first step in any potential applications is learning to ground an LLM in up-to-date and reliable medical knowledge. Just a few years ago, when ChatGPT first came onto the scene, much criticism was levelled at its hallucinations and inaccuracies. Fast-forward to today, and things are very different. I thought it'd be fun to see if we can ground an LLM like ChatGPT in robust medical knowledge - therefore leading to the launch of [ChatIBD](www.chatibd.com), which is really a fun, learning project to see how well this tech works. And although it is not by any means perfect, I think it is surprisingly good. It’s also a glimpse into what future clinician-AI partnerships might look like.
 
 If we can reliably ground LLMs in medical knowledge, we can then think about applying tool calling and agentic architectures next.
 
@@ -32,7 +32,7 @@ Let's consider a concrete example. Imagine an AI agent that sorts out IBD survei
 6. It presents a summary of this to the clinician and patient for review and approval - accounting for things like the patient's planned holidays etc.
 7. Once confirmed, the appointment is booked.
 
-Done right, this can improve adherence to surveillance guidelines, reduce the workload on clinicians and administrative staff, and improve patient outcomes.
+Done right, this can improve adherence to surveillance guidelines, reduce the workload on clinicians and administrative staff, and improve patient outcomes. In addition, when guidelines change, a single context update to the AI agent will propagate the changes across the entire system, ensuring that all patients receive care based on the latest evidence.
 
 The biggest challenge here isn't AI but the existing software infrastructure of the hospital. Hospitals need sandbox environments for experimentation and integration with existing EPRs, which most large systems simply don’t have or are hidden behind a wall of bureaucracy. EPR systems have to become more open and interoperable, but current vendor incentives rarely align with open interoperability.
 
@@ -44,9 +44,7 @@ Much like how Tesla, BYD and other new automotive manufacturers came up with the
 
 Interestingly, I think developing countries may actually leapfrog here. With fewer legacy constraints, bureaucracy, and stronger incentives for cost efficiency, they can iterate and adopt next-gen EPR systems purpose-built for AI workflows much faster.
 
-## A Word on Over-Regulation
-
-Excessive regulation risks slowing progress. These systems are already complex enough; too much bureaucracy could push the best builders elsewhere.
+A quick word on over-regulation - excessive regulation certainly risks slowing progress here. These systems are already complex enough; too much bureaucracy could push the best builders elsewhere.
 
 ## Conclusion
 
