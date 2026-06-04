@@ -1,7 +1,7 @@
 ---
 title: 'Multi-omic Data Orchestration'
 date: 2024-12-13T09:02:45Z
-tags: []
+tags: ["IBD", "data-engineering", "multi-omics"]
 draft: false
 description: ""
 ---

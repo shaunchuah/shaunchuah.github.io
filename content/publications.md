@@ -2,7 +2,6 @@
 title: 'Publications'
 # weight: 1
 # aliases: ["/first"]
-tags: []
 showToc: false
 TocOpen: false
 draft: false

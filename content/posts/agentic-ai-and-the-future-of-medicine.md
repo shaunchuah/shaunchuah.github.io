@@ -1,7 +1,7 @@
 ---
 title: 'Agentic AI and the Future of Medicine'
 date: 2025-10-06T09:54:00Z
-tags: []
+tags: ["AI", "IBD", "medicine"]
 draft: false
 description: ""
 ---

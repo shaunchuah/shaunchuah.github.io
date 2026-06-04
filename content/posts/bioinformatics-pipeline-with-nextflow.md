@@ -3,7 +3,7 @@ title: 'How to Create Your Bioinformatics Pipeline with Nextflow'
 date: 2021-08-12T18:24:45Z
 # weight: 1
 # aliases: ["/first"]
-tags: []
+tags: ["nextflow", "bioinformatics", "docker"]
 showToc: false
 TocOpen: false
 draft: false
@@ -20,12 +20,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 ---
 
 

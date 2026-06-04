@@ -3,7 +3,7 @@ title: 'Launching Nextflow Pipelines From the Cloud'
 date: 2022-04-28T18:29:04Z
 # weight: 1
 # aliases: ["/first"]
-tags: []
+tags: ["nextflow", "bioinformatics", "cloud"]
 showToc: true
 TocOpen: false
 draft: false
@@ -20,12 +20,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 ---
 
 ## Why bother setting up another server to manage your Nextflow pipeline?

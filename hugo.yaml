@@ -19,7 +19,7 @@ params:
   description: "Shaun Chuah's blog"
   keywords: [Blog, Portfolio, PaperMod]
   author: Shaun Chuah
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/profile_photo.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -77,7 +77,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/shaunchuah/shaunchuah.github.io/content"
+    URL: "https://github.com/shaunchuah/shaunchuah.github.io/edit/main/content"
     Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -114,10 +114,10 @@ menu:
       url: /archives/
       weight: 50
 
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags/
-    #   weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

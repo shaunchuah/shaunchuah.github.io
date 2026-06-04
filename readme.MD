@@ -83,12 +83,14 @@ I'm Shaun Chuah, an academic gastroenterologist at the University of Glasgow wit
 1. **Start the development server:**
 
    ```bash
-   hugo server -D
+   hugo server -D --baseURL http://localhost:1313/
    ```
 
 2. **Open your browser** and navigate to `http://localhost:1313/`
 
 The `-D` flag includes draft posts in the build. Remove it for production builds.
+
+The explicit `--baseURL` is important for local development because `hugo.yaml` sets the production URL to `https://shaunchuah.github.io/`. PaperMod renders navigation links using Hugo's absolute URL helpers, so running `hugo server` without a local `--baseURL` can make navbar links point to production instead of `localhost:1313`.
 
 ### Creating Content
 

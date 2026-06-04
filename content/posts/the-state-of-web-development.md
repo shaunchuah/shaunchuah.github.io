@@ -18,10 +18,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share.

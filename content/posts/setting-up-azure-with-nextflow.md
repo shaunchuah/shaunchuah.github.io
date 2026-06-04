@@ -3,7 +3,7 @@ title: 'Setting Up Azure With Nextflow'
 date: 2021-08-18T18:27:01Z
 # weight: 1
 # aliases: ["/first"]
-tags: []
+tags: ["nextflow", "bioinformatics", "cloud"]
 showToc: true
 TocOpen: false
 draft: false
