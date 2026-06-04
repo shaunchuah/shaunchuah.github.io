@@ -11,7 +11,6 @@ comments: false
 canonicalURL: "https://shaunchuah.github.io/projects"
 disableHLJS: false # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: false
@@ -21,6 +20,11 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
+
+## Foundry120
+
+![foundry120 screenshot](/projects/foundry120.png)
+[www.foundry120.com](https://www.foundry120.com)
 
 ## ChatIBD
 

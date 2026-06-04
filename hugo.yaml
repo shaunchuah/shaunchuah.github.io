@@ -66,6 +66,8 @@ params:
       who want to pick up these skills. Check it out [here](https://shaunchuah.github.io/software_engineering_for_science/).
 
   socialIcons:
+    - name: email
+      url: "mailto:shaun.chuah@glasgow.ac.uk"
     - name: x
       url: "https://x.com/drshaunchuah"
     - name: github
@@ -109,10 +111,6 @@ menu:
       name: Publications
       url: /publications/
       weight: 30
-    - identifier: course
-      name: Course
-      url: "https://shaunchuah.github.io/software_engineering_for_science/"
-      weight: 40
     - identifier: archives
       name: Archives
       url: /archives/

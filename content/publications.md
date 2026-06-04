@@ -10,7 +10,6 @@ hidemeta: true
 comments: false
 canonicalURL: "https://shaunchuah.github.io/publications"
 disableHLJS: false # to disable highlightjs
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: false
@@ -20,6 +19,26 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
+
+**ChatIBD: design, safeguards, and early international use of a guideline-grounded generative AI tool for inflammatory bowel disease (IBD) professionals.**\
+Chuah CS, Gros B, Plevris N.\
+[medRxiv 2026](https://doi.org/10.64898/2026.05.06.26352526)
+
+**Machine-learning approach to dissect the clinical heterogeneity of IBD-associated fatigue.**\
+Chuah CS, Hall R, Whelan RJ, Cartlidge PD, Gros B, Iglesias-Flores E, Parkash N, Boyapati RK, Ramos-Belinchon C, Ong S, Brownson EF, Campbell IAM, Mowat C, Seenan JP, MacDonald JC, MUSIC Patient-Public Involvement Group, Ho GT.\
+[BMJ Digital Health & AI 2026](https://doi.org/10.1136/bmjdh-2026-000037)
+
+**Patient-led thematic analysis on the impact of living with inflammatory bowel disease: a contemporary appraisal of 415 patient-reported outcomes to improve care and research.**\
+Halligan MJ, Thompson AE, Docherty D, Kelly P, Pryde E, Chuah CS, Hall R, Ho GT.\
+[Crohn's & Colitis 360 2026](https://doi.org/10.1093/crocol/otag011)
+
+**A chemiluminescence assay targeting granzyme A activity for monitoring inflammatory bowel disease.**\
+Scott JI, Cheng Z, Thompson EJ, Karmakar U, Cowell V, David M, Gordon D, Mendive-Tapia L, Le Saint-Grant A, Volkmer P, Chuah CS et al.\
+[Nature Biomedical Engineering 2026](https://doi.org/10.1038/s41551-025-01588-1)
+
+**A real-world retrospective cohort study of inflammatory bowel disease colorectal cancer surveillance.**\
+Porter RJ, Song M, Gillespie S-L, Ball G, Plevris N, Blackwell J, Watson EF, Churchhouse AMD, Gardner M, Crawford A, Chuah CS et al.\
+[Frontline Gastroenterology 2025](https://doi.org/10.1136/flgastro-2025-103136)
 
 **Formylated Peptide Receptor-1 (FPR1) mediated gut inflammation as a therapeutic target in Inflammatory Bowel Disease**\
 McAllister MJ, Hall R, Whelan RJ, Fischer LJ, Chuah CS, Cartlidge PD, Drury B, Rutherford DG, Duffin RM, Cartwright JA, Dorward DA, Rossi AG, Ho GT.\

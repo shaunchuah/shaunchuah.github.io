@@ -12,7 +12,6 @@ comments: false
 description: ""
 disableHLJS: false # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true
