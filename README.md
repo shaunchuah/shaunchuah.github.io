@@ -1,6 +1,6 @@
 # Shaun Chuah's Personal Website
 
-[![Hugo](https://img.shields.io/badge/Hugo-0.151.0-blue.svg)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-0.164.0-blue.svg)](https://gohugo.io/)
 [![PaperMod](https://img.shields.io/badge/Theme-PaperMod-green.svg)](https://github.com/adityatelange/hugo-PaperMod)
 [![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue.svg)](https://pages.github.com/)
 
@@ -21,7 +21,7 @@ I'm Shaun Chuah, an academic gastroenterologist at the University of Glasgow wit
 
 ## Technology Stack
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/) v0.151.0
+- **Static Site Generator**: [Hugo](https://gohugo.io/) v0.164.0
 - **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod) - A fast, clean, and responsive theme
 - **Deployment**: GitHub Pages with GitHub Actions CI/CD
 - **Analytics**: Google Analytics
@@ -66,8 +66,8 @@ I'm Shaun Chuah, an academic gastroenterologist at the University of Glasgow wit
    sudo apt-get install hugo
 
    # Or download binary
-   wget https://github.com/gohugoio/hugo/releases/download/v0.151.0/hugo_extended_0.151.0_linux-amd64.tar.gz
-   tar -xzf hugo_extended_0.151.0_linux-amd64.tar.gz
+   wget https://github.com/gohugoio/hugo/releases/download/v0.164.0/hugo_extended_0.164.0_linux-amd64.tar.gz
+   tar -xzf hugo_extended_0.164.0_linux-amd64.tar.gz
    sudo mv hugo /usr/local/bin/
    ```
 
@@ -155,13 +155,13 @@ The site configuration is in `hugo.yaml`. Key settings include:
 - **Base URL**: `https://shaunchuah.github.io/`
 - **Theme**: PaperMod
 - **Analytics**: Google Analytics ID configured
-- **Social Links**: X and GitHub
-- **Menu Items**: Home, Search, Projects, Publications, Course, Archives
+- **Social Links**: Email, X and GitHub
+- **Menu Items**: Home, Search, Projects, Publications, Tags, Archives
 
 ### Customizing
 
-- **Theme Customization**: Modify files in `assets/css/extended/` or `layouts/partials/`
-- **Home Page**: Edit `layouts/partials/home_info.html` and corresponding params in `hugo.yaml`
+- **Theme Customization**: Modify files in `assets/css/extended/` or `layouts/_partials/`
+- **Home Page**: Edit `layouts/_partials/home_info.html` and corresponding params in `hugo.yaml`
 - **Social Icons**: Configure in `hugo.yaml` under `params.socialIcons`
 
 ## License

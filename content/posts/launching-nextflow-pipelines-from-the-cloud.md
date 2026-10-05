@@ -1,8 +1,6 @@
 ---
 title: 'Launching Nextflow Pipelines From the Cloud'
 date: 2022-04-28T18:29:04Z
-# weight: 1
-# aliases: ["/first"]
 tags: ["nextflow", "bioinformatics", "cloud"]
 showToc: true
 TocOpen: false

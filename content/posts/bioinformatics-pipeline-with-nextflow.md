@@ -1,8 +1,6 @@
 ---
 title: 'How to Create Your Bioinformatics Pipeline with Nextflow'
 date: 2021-08-12T18:24:45Z
-# weight: 1
-# aliases: ["/first"]
 tags: ["nextflow", "bioinformatics", "docker"]
 showToc: false
 TocOpen: false
@@ -42,7 +40,7 @@ NF core have a nice set of pipelines [here](https://nf-co.re/pipelines) includin
 
 ## How to get started
 
-There are two key frameworks that I will point you to: [nextflow](https://www.nextflow.io/) and [snakemake](https://snakemake.readthedocs.io/en/stable/]). These are the programs that will run your programs for you and orchestrate the input and output files.
+There are two key frameworks that I will point you to: [nextflow](https://www.nextflow.io/) and [snakemake](https://snakemake.readthedocs.io/en/stable/). These are the programs that will run your programs for you and orchestrate the input and output files.
 
 ## Nextflow vs Snakemake
 

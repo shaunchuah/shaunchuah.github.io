@@ -1,8 +1,6 @@
 ---
 title: 'Getting Started With Docker for Bioinformatics'
 date: 2021-08-05T18:23:00Z
-# weight: 1
-# aliases: ["/first"]
 tags: ["bioinformatics", "docker"]
 showToc: false
 TocOpen: false

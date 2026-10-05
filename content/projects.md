@@ -22,30 +22,30 @@ UseHugoToc: true
 
 ## Foundry120
 
-![foundry120 screenshot](/projects/foundry120.png)
+![foundry120 screenshot](/projects/foundry120.webp)
 [www.foundry120.com](https://www.foundry120.com)
 
 ## ChatIBD
 
-![chatibd screenshot](/projects/chatibd.png)
+![chatibd screenshot](/projects/chatibd.webp)
 [www.chatibd.com](https://chatibd.com)
 
 ## G-Trac
 
-![g-trac screenshot](/projects/gtrac.png)
+![g-trac screenshot](/projects/gtrac.webp)
 [samples.musicstudy.uk](https://samples.musicstudy.uk)
 
 ## MUSIC Study
 
-![music study screenshot](/projects/musicstudy.png)
+![music study screenshot](/projects/musicstudy.webp)
 [www.musicstudy.uk](https://musicstudy.uk)
 
 ## MARVEL Study
 
-![marvel study screenshot](/projects/marvelstudy.png)
+![marvel study screenshot](/projects/marvelstudy.webp)
 [www.marvelstudy.uk](https://marvelstudy.uk)
 
 ## ScotRight
 
-![scotright screenshot](/projects/scotright.png)
+![scotright screenshot](/projects/scotright.webp)
 [www.scotright.com](https://scotright.com)

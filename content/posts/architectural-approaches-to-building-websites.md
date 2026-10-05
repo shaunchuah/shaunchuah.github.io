@@ -1,8 +1,6 @@
 ---
 title: 'Architectural Approaches to Building Websites'
 date: 2021-07-01T18:19:49Z
-# weight: 1
-# aliases: ["/first"]
 tags: ["web development"]
 showToc: false
 TocOpen: false
