@@ -27,7 +27,6 @@ const {
 const pageTitle = title ? `${title} · ${SITE.title}` : SITE.title;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(profile.src, Astro.site);
-const gaId = import.meta.env.PROD ? SITE.googleAnalyticsId : undefined;
 ---
 
 <!doctype html>
@@ -61,25 +60,6 @@ const gaId = import.meta.env.PROD ? SITE.googleAnalyticsId : undefined;
 
     <Font cssVariable="--font-sans" preload />
     <Font cssVariable="--font-mono" />
-
-    {
-      gaId && (
-        <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-          <script is:inline define:vars={{ gaId }}>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            // Only count visits to the live site, not local previews.
-            if (location.hostname === 'shaunchuah.github.io') {
-              gtag('js', new Date());
-              gtag('config', gaId);
-            }
-          </script>
-        </>
-      )
-    }
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>

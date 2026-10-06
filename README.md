@@ -47,7 +47,7 @@ Second-level headings (`##`) are numbered automatically and listed in the post's
 ## Structure
 
 - `src/pages/` routes: home, writing, posts, tags, projects, publications, RSS (`/index.xml`)
-- `src/layouts/Base.astro` page shell, metadata and analytics
+- `src/layouts/Base.astro` page shell and metadata
 - `src/components/` header, footer, post lists, project cards, publication entries
 - `src/styles/global.css` the whole design: a 12-column grid with one red accent
 - `src/content.config.ts` content schemas
