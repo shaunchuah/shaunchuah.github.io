@@ -4,6 +4,7 @@ url: https://marvelstudy.uk
 urlLabel: marvelstudy.uk
 group: studies
 order: 7
+image: ../../assets/projects/marvel-study.webp
 summary: Phase 2 trial, MitoQ in UC
 ---
 

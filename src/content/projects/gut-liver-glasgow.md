@@ -4,6 +4,7 @@ url: https://gutliverglasgow.com
 urlLabel: gutliverglasgow.com
 group: community
 order: 4
+image: ../../assets/projects/gut-liver-glasgow.webp
 summary: AI trial finder prototype
 ---
 

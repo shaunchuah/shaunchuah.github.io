@@ -4,6 +4,7 @@ url: https://atlas.foundry120.com
 urlLabel: atlas.foundry120.com
 group: community
 order: 3
+image: ../../assets/projects/foundry120-atlas.webp
 summary: Public IBD datasets, scored for reuse
 ---
 

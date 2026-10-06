@@ -840,20 +840,30 @@ img {
 }
 
 .project-detail img {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: left top;
-  margin-bottom: 24px;
   background: var(--paper-2);
   border: 1px solid var(--rule-faint);
+}
+
+.detail-hero img {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+}
+
+.detail-index {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
 }
 
 .detail-head {
   flex: 0 1 220px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
   font-size: 14px;
 }
 
@@ -866,8 +876,22 @@ img {
 }
 
 .detail-head .more-link {
-  margin-top: 2px;
+  margin-top: 6px;
   padding: 0;
+}
+
+.detail-thumb {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.detail-thumb img {
+  aspect-ratio: 16 / 9;
+}
+
+.detail-thumb:hover img {
+  border-color: var(--rule-light);
 }
 
 .detail-body {

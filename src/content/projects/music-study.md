@@ -4,6 +4,7 @@ url: https://musicstudy.uk
 urlLabel: musicstudy.uk
 group: studies
 order: 6
+image: ../../assets/projects/music-study.webp
 summary: IBD biomarker cohort
 ---
 

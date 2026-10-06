@@ -4,6 +4,7 @@ url: https://shaunchuah.github.io/software_engineering_for_science
 urlLabel: Course materials
 group: teaching
 order: 8
+image: ../../assets/projects/software-engineering-for-science.webp
 summary: Course for new research staff
 ---
 

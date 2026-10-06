@@ -4,6 +4,7 @@ url: https://scotright.com
 urlLabel: scotright.com
 group: community
 order: 5
+image: ../../assets/projects/scotright.webp
 summary: Trainee research network
 ---
 

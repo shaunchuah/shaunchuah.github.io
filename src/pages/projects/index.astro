@@ -47,8 +47,8 @@ const sections = await Promise.all(
           {'intro' in section && <p class="group-intro" set:html={section.intro} />}
           {section.projects.map(({ project, Content }, i) => (
             <article class="project-detail">
-              {project.data.image && (
-                <a href={project.data.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              {project.data.featured && project.data.image && (
+                <a class="detail-hero" href={project.data.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
                   <Image
                     src={project.data.image}
                     alt=""
@@ -57,15 +57,20 @@ const sections = await Promise.all(
                   />
                 </a>
               )}
+              <span class="index detail-index">
+                {s + 1}.{i + 1}
+              </span>
               <div class="row">
                 <div class="detail-head">
-                  <span class="index">
-                    {s + 1}.{i + 1}
-                  </span>
                   <h3>{project.data.title}</h3>
                   <a class="more-link" href={project.data.url} target="_blank" rel="noopener">
                     {project.data.urlLabel} →
                   </a>
+                  {!project.data.featured && project.data.image && (
+                    <a class="detail-thumb" href={project.data.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                      <Image src={project.data.image} alt="" widths={[440, 660]} sizes="220px" />
+                    </a>
+                  )}
                 </div>
                 <div class="prose detail-body">
                   <Content />
