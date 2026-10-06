@@ -29,23 +29,42 @@ export default defineConfig({
       theme: 'github-light',
     },
   },
+  // Fonts come from npm packages, so builds never fetch them from a CDN.
   fonts: [
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.local(),
       name: 'Schibsted Grotesk',
       cssVariable: '--font-sans',
-      weights: ['300 700'],
-      styles: ['normal', 'italic'],
-      subsets: ['latin'],
       fallbacks: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      options: {
+        variants: [
+          {
+            src: ['@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-normal.woff2'],
+            weight: '300 700',
+            style: 'normal',
+          },
+          {
+            src: ['@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-italic.woff2'],
+            weight: '300 700',
+            style: 'italic',
+          },
+        ],
+      },
     },
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.local(),
       name: 'JetBrains Mono',
       cssVariable: '--font-mono',
-      weights: [400],
-      subsets: ['latin'],
       fallbacks: ['ui-monospace', 'monospace'],
+      options: {
+        variants: [
+          {
+            src: ['@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2'],
+            weight: 400,
+            style: 'normal',
+          },
+        ],
+      },
     },
   ],
 });
