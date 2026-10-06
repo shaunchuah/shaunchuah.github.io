@@ -54,6 +54,16 @@ export function excerpt(post: Post, length = 170): string {
     .replace(/\s+/g, ' ')
     .trim();
   if (text.length <= length) return text;
+  // End on a whole sentence where one fits; cut mid-sentence only as a last resort.
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  let summary = '';
+  for (const sentence of sentences) {
+    const next = summary ? `${summary} ${sentence}` : sentence;
+    if (next.length > length) break;
+    summary = next;
+  }
+  if (summary) return summary;
+  if (sentences[0].length <= length * 1.3) return sentences[0];
   return `${text.slice(0, text.lastIndexOf(' ', length))}…`;
 }
 

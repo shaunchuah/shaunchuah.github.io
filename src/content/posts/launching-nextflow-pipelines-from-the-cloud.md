@@ -1,5 +1,6 @@
 ---
 title: 'Launching Nextflow Pipelines From the Cloud'
+description: "How to set up an Ubuntu server on DigitalOcean, install Nextflow and launch your pipelines from the cloud."
 date: 2022-04-28T18:29:04Z
 tags: ["Bioinformatics", "Nextflow"]
 ---

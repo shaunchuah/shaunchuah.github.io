@@ -1,5 +1,6 @@
 ---
 title: 'Setting Up Azure With Nextflow'
+description: "Why I chose Azure over AWS and Google Cloud for Nextflow, and a step-by-step guide to running pipelines with Azure Batch and Storage."
 date: 2021-08-18T18:27:01Z
 tags: ["Bioinformatics", "Nextflow"]
 ---

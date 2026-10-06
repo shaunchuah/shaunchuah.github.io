@@ -1,5 +1,6 @@
 ---
 title: 'The State of Web Development'
+description: "Returning to web development in 2021 during a research fellowship: code editors, CSS and JavaScript frameworks, backend APIs and cloud deployment."
 date: 2021-06-29T18:01:06Z
 tags: ["Web development"]
 ---

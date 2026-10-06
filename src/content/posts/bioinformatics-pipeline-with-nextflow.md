@@ -1,5 +1,6 @@
 ---
 title: 'How to Create Your Bioinformatics Pipeline with Nextflow'
+description: "What a bioinformatics pipeline is, why I chose Nextflow over Snakemake, and how to build one from Docker containers."
 date: 2021-08-12T18:24:45Z
 tags: ["Bioinformatics", "Nextflow"]
 ---

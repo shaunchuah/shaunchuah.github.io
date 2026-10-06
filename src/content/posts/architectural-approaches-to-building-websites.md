@@ -1,5 +1,6 @@
 ---
 title: 'Architectural Approaches to Building Websites'
+description: "A beginner's guide to the four main ways to build a website: plain HTML, full-stack CMS, decoupled JavaScript frontends and JAMstack static site generators."
 date: 2021-07-01T18:19:49Z
 tags: ["Web development"]
 ---

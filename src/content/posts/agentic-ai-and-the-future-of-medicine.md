@@ -1,5 +1,6 @@
 ---
 title: 'Agentic AI and the Future of Medicine'
+description: "What agentic AI coding tools suggest for medicine: grounding LLMs, tool calling, an IBD surveillance agent and the software-defined hospital."
 date: 2025-10-06T09:54:00Z
 tags: ["AI", "IBD"]
 ---

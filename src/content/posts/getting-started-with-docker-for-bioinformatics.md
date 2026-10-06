@@ -1,5 +1,6 @@
 ---
 title: 'Getting Started With Docker for Bioinformatics'
+description: "How to run bioinformatics tools such as bowtie2 in Docker containers instead of installing them, and where to find ready-made images."
 date: 2021-08-05T18:23:00Z
 tags: ["Bioinformatics"]
 ---
