@@ -161,6 +161,12 @@ img {
   font-weight: 500;
 }
 
+/* Taller click targets without changing the header height. */
+.site-nav a {
+  padding: 8px 0;
+  margin: -8px 0;
+}
+
 .site-nav a[aria-current='page'] {
   color: var(--red);
 }
@@ -209,6 +215,7 @@ img {
 
   .site-nav a {
     padding: 12px 0;
+    margin: 0;
     border-bottom: 1px solid var(--rule-light);
   }
 
