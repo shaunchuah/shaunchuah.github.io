@@ -9,6 +9,9 @@ export default defineConfig({
   redirects: {
     '/archives': '/posts/',
     '/search': '/posts/',
+    // Hugo category pages.
+    '/categories': '/tags/',
+    '/categories/web-development': '/tags/web-development/',
     // Tags retired when the tag list was consolidated.
     '/tags/agentic-ai': '/tags/ai/',
     '/tags/llms': '/tags/ai/',
