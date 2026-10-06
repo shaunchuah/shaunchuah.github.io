@@ -509,6 +509,26 @@ img {
   color: var(--ink);
 }
 
+/* Speaker bio */
+
+.bio p {
+  margin: 0;
+  max-width: 660px;
+  font-size: 17px;
+  color: var(--ink-2);
+}
+
+.bio .bio-label {
+  margin: 32px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.bio .more-link {
+  margin-top: 32px;
+}
+
 /* Page titles for index pages */
 
 .page-head {

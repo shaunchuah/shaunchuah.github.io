@@ -4,9 +4,14 @@ import Talk from '../../components/Talk.astro';
 import Base from '../../layouts/Base.astro';
 
 const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.data.order);
+
+const bio =
+  'Dr Shaun Chuah is a Clinical Senior Research Fellow at the University of Glasgow and Honorary Consultant Gastroenterologist at NHS Greater Glasgow and Clyde, specialising in inflammatory bowel disease. His MD at the University of Edinburgh studied circulating cell-free DNA as a biomarker in IBD. He now builds AI and data tools for clinical care and research. He co-founded ChatIBD (chatibd.com), an AI guideline assistant for IBD clinicians, and leads development of Foundry120 (foundry120.com), a governed research data platform for translational science. Foundry120 grew out of the sample tracker he built for the MUSIC study and has tracked more than 30,000 samples.';
+const shortBio =
+  'Dr Shaun Chuah is an IBD consultant and clinical academic at the University of Glasgow who builds AI and data tools for clinical care and research, including ChatIBD and Foundry120.';
 ---
 
-<Base title="Invited talks" description="Invited talks by Shaun Chuah.">
+<Base title="Invited talks" description="Invited talks by Shaun Chuah, with a speaker bio and headshot for event organisers.">
   <section class="page-head row">
     <div class="label"></div>
     <div class="main">
@@ -18,6 +23,16 @@ const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.dat
     <div class="label"></div>
     <div class="main">
       {talks.map((talk) => <Talk talk={talk} />)}
+    </div>
+  </section>
+
+  <section class="section row" aria-labelledby="bio">
+    <h2 class="section-title label" id="bio">Speaker bio</h2>
+    <div class="main bio">
+      <p>{bio}</p>
+      <h3 class="bio-label">Short version</h3>
+      <p>{shortBio}</p>
+      <a class="more-link" href="/shaun-chuah-headshot.jpg" download>Download headshot (JPG, 1720 × 1720 px) →</a>
     </div>
   </section>
 </Base>
