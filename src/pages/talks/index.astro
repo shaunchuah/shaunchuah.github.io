@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Talk from '../../components/Talk.astro';
+import Base from '../../layouts/Base.astro';
+
+const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Invited talks" description="Invited talks by Shaun Chuah.">
+  <section class="page-head row">
+    <div class="label"></div>
+    <div class="main">
+      <h1 class="page-title">Invited talks</h1>
+    </div>
+  </section>
+
+  <section class="section row" aria-label="All invited talks">
+    <div class="label"></div>
+    <div class="main">
+      {talks.map((talk) => <Talk talk={talk} />)}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,32 @@
+# Invited talks, newest first. Slides are not published.
+
+- id: lilly-gut-feelings-2026
+  title: "Promises and Pitfalls of GenAI: From Clinical Knowledge to Clinical Workflow"
+  event: "Gut Feelings Annual Meeting, London"
+  year: 2026
+  note: "Lilly-sponsored meeting"
+
+- id: nhs-tayside-2026
+  title: "Building Agentic AI for IBD Clinical Care"
+  event: "NHS Tayside Gastroenterology Meeting"
+  year: 2026
+
+- id: eastbio-2025
+  title: "GenAI & Biosciences"
+  event: "EastBio Doctoral Training Partnership, University of Dundee"
+  year: 2025
+
+- id: pibd-2022
+  title: "How to Design Your Sample Tracking System"
+  event: "6th International Symposium on Paediatric IBD (ESPGHAN), Edinburgh"
+  year: 2022
+
+- id: ueg-week-2020
+  title: "ESEGH – A Personal View"
+  event: "UEG Week Virtual"
+  year: 2020
+
+- id: rcpe-advanced-gastro-2018
+  title: "Colitis in the Elderly"
+  event: "22nd Advanced Gastroenterology and Hepatology Course, Royal College of Physicians of Edinburgh"
+  year: 2018

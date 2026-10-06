@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import profile from '../assets/profile.jpg';
 import ProjectCard from '../components/ProjectCard.astro';
 import Publication from '../components/Publication.astro';
+import Talk from '../components/Talk.astro';
 import YearGroups from '../components/YearGroups.astro';
 import Base from '../layouts/Base.astro';
 import { getPosts } from '../lib/content';
@@ -15,6 +16,7 @@ const others = projects.filter((p) => !p.data.featured);
 const selected = (await getCollection('publications'))
   .filter((p) => p.data.selected)
   .sort((a, b) => a.data.order - b.data.order);
+const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base>
@@ -64,6 +66,14 @@ const selected = (await getCollection('publications'))
     <div class="main">
       {selected.map((pub) => <Publication pub={pub} short />)}
       <a class="more-link" href="/publications/">All publications →</a>
+    </div>
+  </section>
+
+  <section class="section row" aria-labelledby="talks">
+    <h2 class="section-title label" id="talks"><span class="index">04</span>Invited talks</h2>
+    <div class="main">
+      {talks.slice(0, 3).map((talk) => <Talk talk={talk} />)}
+      <a class="more-link" href="/talks/">All invited talks →</a>
     </div>
   </section>
 </Base>

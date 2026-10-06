@@ -3,6 +3,7 @@ const links = [
   { href: '/posts/', label: 'Writing', match: ['/posts/', '/tags/'] },
   { href: '/projects/', label: 'Projects', match: ['/projects/'] },
   { href: '/publications/', label: 'Publications', match: ['/publications/'] },
+  { href: '/talks/', label: 'Talks', match: ['/talks/'] },
 ];
 const path = Astro.url.pathname;
 const isCurrent = (match: string[]) => match.some((prefix) => path.startsWith(prefix));

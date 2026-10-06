@@ -46,4 +46,18 @@ const publications = defineCollection({
   }),
 });
 
-export const collections = { posts, projects, publications };
+const talks = defineCollection({
+  loader: file('./src/data/talks.yaml', {
+    parser: (text) =>
+      (parseYaml(text) as Record<string, unknown>[]).map((entry, order) => ({ ...entry, order })),
+  }),
+  schema: z.object({
+    title: z.string(),
+    event: z.string(),
+    year: z.number(),
+    note: z.string().optional(),
+    order: z.number(),
+  }),
+});
+
+export const collections = { posts, projects, publications, talks };
