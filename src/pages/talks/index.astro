@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Talk from '../../components/Talk.astro';
+import YearGroup from '../../components/YearGroup.astro';
 import Base from '../../layouts/Base.astro';
+import { groupByYear } from '../../lib/content';
 
 const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.data.order);
 
@@ -22,7 +24,17 @@ const shortBio =
   <section class="section row" aria-label="All invited talks">
     <div class="label"></div>
     <div class="main">
-      {talks.map((talk) => <Talk talk={talk} />)}
+      <div>
+        {
+          groupByYear(talks, (talk) => talk.data.year).map(({ year, items }) => (
+            <YearGroup year={year}>
+              {items.map((talk) => (
+                <Talk talk={talk} />
+              ))}
+            </YearGroup>
+          ))
+        }
+      </div>
     </div>
   </section>
 

@@ -57,20 +57,21 @@ export function excerpt(post: Post, length = 170): string {
   return `${text.slice(0, text.lastIndexOf(' ', length))}…`;
 }
 
-export function groupByYear(posts: Post[]): { year: number; posts: Post[] }[] {
-  const groups = new Map<number, Post[]>();
-  for (const post of posts) {
-    const year = post.data.date.getUTCFullYear();
-    groups.set(year, [...(groups.get(year) ?? []), post]);
+/** Groups items already sorted newest first, keeping their order. */
+export function groupByYear<T>(items: T[], yearOf: (item: T) => number): { year: number; items: T[] }[] {
+  const groups = new Map<number, T[]>();
+  for (const item of items) {
+    const year = yearOf(item);
+    groups.set(year, [...(groups.get(year) ?? []), item]);
   }
-  return [...groups].map(([year, posts]) => ({ year, posts }));
+  return [...groups].map(([year, items]) => ({ year, items }));
 }
 
-/** 04.06 */
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/** 4 Jun */
 export function dayMonth(date: Date): string {
-  const dd = String(date.getUTCDate()).padStart(2, '0');
-  const mm = String(date.getUTCMonth() + 1).padStart(2, '0');
-  return `${dd}.${mm}`;
+  return `${date.getUTCDate()} ${MONTHS[date.getUTCMonth()]}`;
 }
 
 /** 4 June 2026 */

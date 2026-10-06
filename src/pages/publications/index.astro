@@ -1,8 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import Publication from '../../components/Publication.astro';
+import YearGroup from '../../components/YearGroup.astro';
 import Base from '../../layouts/Base.astro';
 import { SITE } from '../../consts';
+import { groupByYear } from '../../lib/content';
 
 const pubs = (await getCollection('publications')).sort((a, b) => a.data.order - b.data.order);
 ---
@@ -18,7 +20,17 @@ const pubs = (await getCollection('publications')).sort((a, b) => a.data.order -
   <section class="section row" aria-label="All publications">
     <div class="label"></div>
     <div class="main">
-      {pubs.map((pub) => <Publication pub={pub} />)}
+      <div>
+        {
+          groupByYear(pubs, (pub) => pub.data.year).map(({ year, items }) => (
+            <YearGroup year={year}>
+              {items.map((pub) => (
+                <Publication pub={pub} />
+              ))}
+            </YearGroup>
+          ))
+        }
+      </div>
       <a class="more-link" href={SITE.orcid}>Full record on ORCID →</a>
     </div>
   </section>

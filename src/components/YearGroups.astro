@@ -1,5 +1,6 @@
 ---
 import { dayMonth, groupByYear, type Post, postUrl } from '../lib/content';
+import YearGroup from './YearGroup.astro';
 
 interface Props {
   posts: Post[];
@@ -8,34 +9,31 @@ interface Props {
 }
 
 const { posts, compactFrom = 3 } = Astro.props;
-const groups = groupByYear(posts);
+const groups = groupByYear(posts, (post) => post.data.date.getUTCFullYear());
 ---
 
 <div>
   {
-    groups.map(({ year, posts }) => (
-      <div class="year-group">
-        <div class="year">{year}</div>
-        {posts.length >= compactFrom ? (
-          <div class="year-posts compact">
-            {posts.map((post) => (
-              <a href={postUrl(post)}>{post.data.title}</a>
-            ))}
-          </div>
-        ) : (
-          <div class="year-posts">
-            {posts.map((post) => (
-              <a class="post-link" href={postUrl(post)}>
-                <span class="title">{post.data.title}</span>
-                <span class="meta">
-                  {dayMonth(post.data.date)}
-                  {post.data.tags.length > 0 && ` · ${post.data.tags.slice(0, 3).join(', ')}`}
-                </span>
-              </a>
-            ))}
-          </div>
-        )}
-      </div>
-    ))
+    groups.map(({ year, items }) =>
+      items.length >= compactFrom ? (
+        <YearGroup year={year} compact>
+          {items.map((post) => (
+            <a href={postUrl(post)}>{post.data.title}</a>
+          ))}
+        </YearGroup>
+      ) : (
+        <YearGroup year={year}>
+          {items.map((post) => (
+            <a class="post-link" href={postUrl(post)}>
+              <span class="title">{post.data.title}</span>
+              <span class="meta">
+                {dayMonth(post.data.date)}
+                {post.data.tags.length > 0 && ` · ${post.data.tags.slice(0, 3).join(', ')}`}
+              </span>
+            </a>
+          ))}
+        </YearGroup>
+      ),
+    )
   }
 </div>

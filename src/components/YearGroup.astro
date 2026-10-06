@@ -1,0 +1,16 @@
+---
+interface Props {
+  year: number;
+  /** Titles only, tighter spacing. */
+  compact?: boolean;
+}
+
+const { year, compact = false } = Astro.props;
+---
+
+<div class="year-group">
+  <div class="year">{year}</div>
+  <div class:list={['year-posts', { compact }]}>
+    <slot />
+  </div>
+</div>

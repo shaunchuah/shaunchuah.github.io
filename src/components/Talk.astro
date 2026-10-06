@@ -5,16 +5,13 @@ interface Props {
   talk: CollectionEntry<'talks'>;
 }
 
-const { title, event, year, note } = Astro.props.talk.data;
+const { title, event, note } = Astro.props.talk.data;
 ---
 
 <div class="pub">
-  <span class="pub-year">{year}</span>
-  <span class="pub-body">
-    <span class="pub-title">{title}</span>
-    <span class="pub-meta">
-      {event}
-      {note && ` · ${note}`}
-    </span>
+  <span class="pub-title">{title}</span>
+  <span class="pub-meta">
+    {event}
+    {note && ` · ${note}`}
   </span>
 </div>

@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { pub, short = false } = Astro.props;
-const { title, venue, year, doi } = pub.data;
+const { title, venue, doi } = pub.data;
 
 let authors = pub.data.authors.split(/,\s*/);
 const truncated = short && authors.length > 3;
@@ -19,19 +19,16 @@ const isMe = (name: string) => /^(Chuah CS|CS Chuah)$/.test(name);
 ---
 
 <a class="pub" href={`https://doi.org/${doi}`} target="_blank" rel="noopener">
-  <span class="pub-year">{year}</span>
-  <span class="pub-body">
-    <span class="pub-title">{title}</span>
-    <span class="pub-meta">
-      {
-        authors.map((name, i) => (
-          <>
-            {i > 0 && ', '}
-            {isMe(name) ? <span class="me">{name}</span> : name}
-          </>
-        ))
-      }
-      {etAl && ', et al.'} · {venue}
-    </span>
+  <span class="pub-title">{title}</span>
+  <span class="pub-meta">
+    {
+      authors.map((name, i) => (
+        <>
+          {i > 0 && ', '}
+          {isMe(name) ? <span class="me">{name}</span> : name}
+        </>
+      ))
+    }
+    {etAl && ', et al.'} · {venue}
   </span>
 </a>
