@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const groups = [
+  { key: 'platforms', title: 'Research platforms' },
+  {
+    key: 'studies',
+    title: 'Clinical studies',
+    intro:
+      'I helped set up these studies as part of Prof Gwo-Tzer Ho\'s <a href="https://www.gla.ac.uk/schools/infectionimmunity/staff/gwotzerho/theguttranslationalresearchgroup/">Gut Translational Research Group</a> at the University of Glasgow, and built their websites.',
+  },
+  { key: 'community', title: 'Community' },
+  { key: 'teaching', title: 'Teaching' },
+] as const;
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const sections = await Promise.all(
+  groups.map(async (group) => ({
+    ...group,
+    projects: await Promise.all(
+      projects
+        .filter((p) => p.data.group === group.key)
+        .map(async (project) => ({ project, Content: (await render(project)).Content })),
+    ),
+  })),
+);
+---
+
+<Base title="Projects" description="Research platforms, clinical studies, community and teaching projects by Shaun Chuah.">
+  <section class="page-head row">
+    <div class="label"></div>
+    <div class="main">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-lede">Software I've built for research and clinical care, and the studies and communities it supports.</p>
+    </div>
+  </section>
+
+  {
+    sections.map((section, s) => (
+      <section class="section row" aria-labelledby={section.key}>
+        <h2 class="section-title label" id={section.key}>
+          <span class="index">{String(s + 1).padStart(2, '0')}</span>
+          {section.title}
+        </h2>
+        <div class="main projects-detail">
+          {'intro' in section && <p class="group-intro" set:html={section.intro} />}
+          {section.projects.map(({ project, Content }, i) => (
+            <article class="project-detail" data-pagefind-body>
+              {project.data.image && (
+                <a href={project.data.url} tabindex="-1" aria-hidden="true">
+                  <Image
+                    src={project.data.image}
+                    alt=""
+                    widths={[600, 1000, 1400]}
+                    sizes="(max-width: 720px) 100vw, 860px"
+                  />
+                </a>
+              )}
+              <div class="row">
+                <div class="detail-head">
+                  <span class="index">
+                    {s + 1}.{i + 1}
+                  </span>
+                  <h3>{project.data.title}</h3>
+                  <span class="muted">{project.data.role}</span>
+                  <a class="more-link" href={project.data.url}>
+                    {project.data.urlLabel} →
+                  </a>
+                </div>
+                <div class="prose detail-body">
+                  <Content />
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</Base>

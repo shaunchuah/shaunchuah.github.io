@@ -1,0 +1,40 @@
+---
+import YearGroups from '../../components/YearGroups.astro';
+import Base from '../../layouts/Base.astro';
+import { getPosts, getTags } from '../../lib/content';
+
+const posts = await getPosts();
+const tags = getTags(posts);
+---
+
+<Base title="Writing" description="Posts on translational research, clinical data infrastructure, applied AI and software.">
+  <section class="page-head row">
+    <div class="label"></div>
+    <div class="main">
+      <h1 class="page-title">Writing</h1>
+      <p class="page-lede">
+        On translational research, clinical data infrastructure, applied AI and the software behind them.
+      </p>
+    </div>
+  </section>
+
+  <section class="section row" aria-labelledby="all-posts">
+    <h2 class="section-title label" id="all-posts"><span class="index">01</span>All posts</h2>
+    <div class="main">
+      <YearGroups posts={posts} compactFrom={Infinity} />
+    </div>
+  </section>
+
+  <section class="section row" aria-labelledby="tags">
+    <h2 class="section-title label" id="tags"><span class="index">02</span>Tags</h2>
+    <div class="main tag-list tag-cloud">
+      {
+        tags.map((tag) => (
+          <a href={`/tags/${tag.slug}/`}>
+            {tag.label} <span class="muted">{tag.posts.length}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>

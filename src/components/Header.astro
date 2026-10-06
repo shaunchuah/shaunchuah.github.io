@@ -1,0 +1,52 @@
+---
+import { Image } from 'astro:assets';
+import profile from '../assets/profile.jpg';
+
+const links = [
+  { href: '/posts/', label: 'Writing', match: ['/posts/', '/tags/'] },
+  { href: '/projects/', label: 'Projects', match: ['/projects/'] },
+  { href: '/publications/', label: 'Publications', match: ['/publications/'] },
+];
+const path = Astro.url.pathname;
+const isCurrent = (match: string[]) => match.some((prefix) => path.startsWith(prefix));
+---
+
+<header class="site-header row" data-site-header>
+  <div class="label">
+    <a class="brand" href="/">
+      <Image src={profile} alt="" width={64} height={64} loading="eager" />
+      <span>Shaun Chuah</span>
+    </a>
+  </div>
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Menu"
+    aria-expanded="false"
+    aria-controls="site-nav"
+    data-menu-button
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+      <path d="M3 7h18M3 17h18"></path>
+    </svg>
+  </button>
+  <nav class="site-nav main" id="site-nav" aria-label="Main">
+    {
+      links.map((link) => (
+        <a href={link.href} aria-current={isCurrent(link.match) ? 'page' : undefined}>
+          {link.label}
+        </a>
+      ))
+    }
+    <a class="nav-search" href="/search/" aria-current={path.startsWith('/search/') ? 'page' : undefined}>Search</a>
+  </nav>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  const button = document.querySelector<HTMLButtonElement>('[data-menu-button]');
+  button?.addEventListener('click', () => {
+    const open = header?.toggleAttribute('data-open') ?? false;
+    button.setAttribute('aria-expanded', String(open));
+  });
+</script>

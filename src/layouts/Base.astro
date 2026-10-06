@@ -1,0 +1,94 @@
+---
+import '../styles/global.css';
+import { Font } from 'astro:assets';
+import profile from '../assets/profile.jpg';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  editPath?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = SITE.description,
+  type = 'website',
+  publishedTime,
+  editPath,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title ? `${title} · ${SITE.title}` : SITE.title;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(profile.src, Astro.site);
+const gaId = import.meta.env.PROD ? SITE.googleAnalyticsId : undefined;
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.author} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/index.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={title ?? SITE.title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@drshaunchuah" />
+
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-mono" />
+
+    {
+      gaId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+          <script is:inline define:vars={{ gaId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            // Only count visits to the live site, not local previews.
+            if (location.hostname === 'shaunchuah.github.io') {
+              gtag('js', new Date());
+              gtag('config', gaId);
+            }
+          </script>
+        </>
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="wrap">
+      <Header />
+      <main id="content">
+        <slot />
+      </main>
+      <Footer editPath={editPath} />
+    </div>
+  </body>
+</html>

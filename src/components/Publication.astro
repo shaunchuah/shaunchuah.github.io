@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  pub: CollectionEntry<'publications'>;
+  /** Show the first three authors only. */
+  short?: boolean;
+}
+
+const { pub, short = false } = Astro.props;
+const { title, venue, year, doi } = pub.data;
+
+let authors = pub.data.authors.split(/,\s*/);
+const truncated = short && authors.length > 3;
+if (truncated) authors = authors.slice(0, 3);
+authors = authors.map((name) => name.replace(/\bet al\b\.?$/, '').trim()).filter(Boolean);
+const etAl = truncated || /\bet al\b/.test(pub.data.authors);
+const isMe = (name: string) => /^(Chuah CS|CS Chuah)$/.test(name);
+---
+
+<a class="pub" href={`https://doi.org/${doi}`}>
+  <span class="pub-year">{year}</span>
+  <span class="pub-body">
+    <span class="pub-title">{title}</span>
+    <span class="pub-meta">
+      {
+        authors.map((name, i) => (
+          <>
+            {i > 0 && ', '}
+            {isMe(name) ? <span class="me">{name}</span> : name}
+          </>
+        ))
+      }
+      {etAl && ', et al.'} · {venue}
+    </span>
+  </span>
+</a>

@@ -1,0 +1,41 @@
+---
+import { dayMonth, groupByYear, type Post, postUrl } from '../lib/content';
+
+interface Props {
+  posts: Post[];
+  /** Years with at least this many posts are listed as titles only. */
+  compactFrom?: number;
+}
+
+const { posts, compactFrom = 3 } = Astro.props;
+const groups = groupByYear(posts);
+---
+
+<div>
+  {
+    groups.map(({ year, posts }) => (
+      <div class="year-group">
+        <div class="year">{year}</div>
+        {posts.length >= compactFrom ? (
+          <div class="year-posts compact">
+            {posts.map((post) => (
+              <a href={postUrl(post)}>{post.data.title}</a>
+            ))}
+          </div>
+        ) : (
+          <div class="year-posts">
+            {posts.map((post) => (
+              <a class="post-link" href={postUrl(post)}>
+                <span class="title">{post.data.title}</span>
+                <span class="meta">
+                  {dayMonth(post.data.date)}
+                  {post.data.tags.length > 0 && ` · ${post.data.tags.slice(0, 3).join(', ')}`}
+                </span>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    ))
+  }
+</div>

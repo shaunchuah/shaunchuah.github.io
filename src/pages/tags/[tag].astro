@@ -1,0 +1,36 @@
+---
+import YearGroups from '../../components/YearGroups.astro';
+import Base from '../../layouts/Base.astro';
+import { getPosts, getTags, type Post } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const tags = getTags(await getPosts());
+  return tags.map((tag) => ({ params: { tag: tag.slug }, props: { label: tag.label, posts: tag.posts } }));
+}
+
+interface Props {
+  label: string;
+  posts: Post[];
+}
+
+const { label, posts } = Astro.props;
+---
+
+<Base title={`Tagged ${label}`} description={`Posts tagged ${label}.`}>
+  <section class="page-head row">
+    <div class="label post-meta">
+      <a class="index" href="/posts/">← All writing</a>
+    </div>
+    <div class="main">
+      <h1 class="page-title">{label}</h1>
+      <p class="page-lede">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+    </div>
+  </section>
+
+  <section class="section row" aria-label="Posts">
+    <div class="label"></div>
+    <div class="main">
+      <YearGroups posts={posts} compactFrom={Infinity} />
+    </div>
+  </section>
+</Base>

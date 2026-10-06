@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, getTags } from '../../lib/content';
+
+const tags = getTags(await getPosts());
+---
+
+<Base title="Tags" description="Posts by topic.">
+  <section class="page-head row">
+    <div class="label"></div>
+    <div class="main">
+      <h1 class="page-title">Tags</h1>
+    </div>
+  </section>
+
+  <section class="section row" aria-label="All tags">
+    <div class="label"></div>
+    <div class="main tag-list tag-cloud">
+      {
+        tags.map((tag) => (
+          <a href={`/tags/${tag.slug}/`}>
+            {tag.label} <span class="muted">{tag.posts.length}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>

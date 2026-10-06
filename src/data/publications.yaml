@@ -1,0 +1,144 @@
+# Publications, newest first. Set selected: true to show one on the homepage.
+
+- id: "10.64898/2026.05.06.26352526"
+  title: "ChatIBD: design, safeguards, and early international use of a guideline-grounded generative AI tool for inflammatory bowel disease (IBD) professionals"
+  authors: "Chuah CS, Gros B, Plevris N"
+  venue: "medRxiv"
+  year: 2026
+  doi: "10.64898/2026.05.06.26352526"
+  selected: true
+
+- id: "10.1136/bmjdh-2026-000037"
+  title: "Machine-learning approach to dissect the clinical heterogeneity of IBD-associated fatigue"
+  authors: "Chuah CS, Hall R, Whelan RJ, Cartlidge PD, Gros B, Iglesias-Flores E, Parkash N, Boyapati RK, Ramos-Belinchon C, Ong S, Brownson EF, Campbell IAM, Mowat C, Seenan JP, MacDonald JC, MUSIC Patient-Public Involvement Group, Ho GT"
+  venue: "BMJ Digital Health & AI"
+  year: 2026
+  doi: "10.1136/bmjdh-2026-000037"
+  selected: true
+
+- id: "10.1093/crocol/otag011"
+  title: "Patient-led thematic analysis on the impact of living with inflammatory bowel disease: a contemporary appraisal of 415 patient-reported outcomes to improve care and research"
+  authors: "Halligan MJ, Thompson AE, Docherty D, Kelly P, Pryde E, Chuah CS, Hall R, Ho GT"
+  venue: "Crohn's & Colitis 360"
+  year: 2026
+  doi: "10.1093/crocol/otag011"
+
+- id: "10.1038/s41551-025-01588-1"
+  title: "A chemiluminescence assay targeting granzyme A activity for monitoring inflammatory bowel disease"
+  authors: "Scott JI, Cheng Z, Thompson EJ, Karmakar U, Cowell V, David M, Gordon D, Mendive-Tapia L, Le Saint-Grant A, Volkmer P, Chuah CS et al"
+  venue: "Nature Biomedical Engineering"
+  year: 2026
+  doi: "10.1038/s41551-025-01588-1"
+  selected: true
+
+- id: "10.1136/flgastro-2025-103136"
+  title: "A real-world retrospective cohort study of inflammatory bowel disease colorectal cancer surveillance"
+  authors: "Porter RJ, Song M, Gillespie S-L, Ball G, Plevris N, Blackwell J, Watson EF, Churchhouse AMD, Gardner M, Crawford A, Chuah CS et al"
+  venue: "Frontline Gastroenterology"
+  year: 2025
+  doi: "10.1136/flgastro-2025-103136"
+
+- id: "10.1093/crocol/otae003"
+  title: "Formylated Peptide Receptor-1 (FPR1) mediated gut inflammation as a therapeutic target in Inflammatory Bowel Disease"
+  authors: "McAllister MJ, Hall R, Whelan RJ, Fischer LJ, Chuah CS, Cartlidge PD, Drury B, Rutherford DG, Duffin RM, Cartwright JA, Dorward DA, Rossi AG, Ho GT"
+  venue: "Crohn's & Colitis 360"
+  year: 2024
+  doi: "10.1093/crocol/otae003"
+
+- id: "10.12703/r/12-14"
+  title: "Circulating Cell-Free DNA in Inflammatory Bowel Disease: Liquid Biopsies with Mechanistic and Translational Implications"
+  authors: "Chuah CS, Fischer L, Ho GT"
+  venue: "Faculty Reviews"
+  year: 2023
+  doi: "10.12703/r/12-14"
+
+- id: "10.1016/j.gastha.2023.03.022"
+  title: "Neutrophil-dependent Mitochondrial DNA Release Associated With Extracellular Trap Formation in Inflammatory Bowel Disease"
+  authors: "Drury B, Chuah CS, Hall R, Hardisty GR, Rossi AG, Ho GT"
+  venue: "Gastro Hep Advances"
+  year: 2023
+  doi: "10.1016/j.gastha.2023.03.022"
+
+- id: "10.1111/apt.16982"
+  title: "Letter: non-selective beta-blockers in cirrhosis—effect beyond portal hypertension. Authors' reply"
+  authors: "Dunne P, Young D, Chuah CS, Hayes PC, Tripathi D, Leithead JA, Smith LA, Gaya DR, Forrest EH, Stanley AJ"
+  venue: "Alimentary Pharmacology & Therapeutics"
+  year: 2022
+  doi: "10.1111/apt.16982"
+
+- id: "10.1111/apt.16901"
+  title: "Carvedilol versus endoscopic band ligation for secondary prophylaxis of variceal bleeding-long-term follow-up of a randomised control trial"
+  authors: "Dunne P, Young D, Chuah CS, Hayes PC, Tripathi D, Leithead JA, Smith LA, Gaya DR, Forrest EH, Stanley AJ"
+  venue: "Alimentary Pharmacology & Therapeutics"
+  year: 2022
+  doi: "10.1111/apt.16901"
+
+- id: "10.1007/s10753-021-01567-z"
+  title: "Intestinal protein characterisation of SARS-CoV-2 entry molecules ACE2 and TMPRSS2 in inflammatory bowel disease and fatal COVID-19 infection"
+  authors: "McAllister MJ, Kirkwood K, Chuah CS, Thompson EJ, Cartwright JA, Russell CD, Dorward DA, Lucas CD, Ho GT"
+  venue: "Inflammation"
+  year: 2021
+  doi: "10.1007/s10753-021-01567-z"
+
+- id: "10.1111/apt.16189"
+  title: "Carvedilol is associated with improved survival in patients with cirrhosis: a long-term follow-up study"
+  authors: "McDowell H, Chuah CS, Tripathi D, Stanley AJ, Forrest EH, Hayes PC"
+  venue: "Alimentary Pharmacology & Therapeutics"
+  year: 2021
+  doi: "10.1111/apt.16189"
+
+- id: "10.1111/jgh.15390"
+  title: "Real-world effectiveness and safety of ustekinumab for the treatment of Crohn's disease: the Scottish ustekinumab cohort"
+  authors: "Plevris N, Fulforth J, Siakavellas S, Robertson A, Hall R, Tyler A, Jenkinson PW, Campbell I, Chuah CS, Kane C, Veryan J, Lam WL, Saunders J, Kelly C, Gaya D, Jafferbhoy H, MacDonald JC, Seenan JP, Mowat C, Naismith G, Potts LF, Sutherland DI, Watts D, Arnott I, Bain G, Jones G, Lees CW"
+  venue: "Journal of Gastroenterology and Hepatology"
+  year: 2020
+  doi: "10.1111/jgh.15390"
+
+- id: "10.1016/j.cgh.2020.08.022"
+  title: "Normalization of Fecal Calprotectin Within 12 Months of Diagnosis Is Associated With Reduced Risk of Disease Progression in Patients With Crohn’s Disease"
+  authors: "Plevris N, Fulforth J, Lyons M, Siakavellas S, Jenkinson PW, Chuah CS, Lucaciu L, Pattenden RJ, Arnott ID, Jones GR, Lees CW"
+  venue: "Clinical Gastroenterology and Hepatology"
+  year: 2020
+  doi: "10.1016/j.cgh.2020.08.022"
+
+- id: "10.1093/ecco-jcc/jjz042"
+  title: "Real-world Effectiveness and Safety of Vedolizumab for the Treatment of Inflammatory Bowel Disease: The Scottish Vedolizumab Cohort"
+  authors: "Plevris N, Chuah CS, Allen RM, Lees CW et al"
+  venue: "Journal of Crohn's and Colitis"
+  year: 2019
+  doi: "10.1093/ecco-jcc/jjz042"
+
+- id: "10.1136/flgastro-2019-101197"
+  title: "Association of trough vedolizumab levels with clinical, biological and endoscopic outcomes during maintenance therapy in inflammatory bowel disease"
+  authors: "Plevris N, Jenkinson PW, Chuah CS, Lyons M, Merchant LM, Pattenden R, Arnott ID, Jones GR, Lees CW"
+  venue: "Frontline Gastroenterology"
+  year: 2019
+  doi: "10.1136/flgastro-2019-101197"
+
+- id: "10.1093/ibd/izy320"
+  title: "Higher Adalimumab Drug Levels During Maintenance Therapy for Crohn's Disease Are Associated With Biologic Remission"
+  authors: "Plevris N, Lyons M, Jenkinson PW, Chuah CS, Merchant LM, Pattenden RJ, Watson EF, Ho GT, Noble CL, Shand AG, Din S, Arnott ID, Jones GR, Lees CW"
+  venue: "Inflammatory Bowel Diseases"
+  year: 2019
+  doi: "10.1093/ibd/izy320"
+
+- id: "10.1007/s10620-018-5406-8"
+  title: "Implementation of CT-P13 via a Managed Switch Programme in Crohn's Disease: 12-Month Real-World Outcomes"
+  authors: "Plevris N, Jones GR, Jenkinson PW, Lyons M, Chuah CS, Merchant LM, Pattenden RJ, Watson EF, Ho GT, Noble CL, Din S, Shand AG, Arnott ID, Lees CW"
+  venue: "Digestive Disease and Sciences"
+  year: 2019
+  doi: "10.1007/s10620-018-5406-8"
+
+- id: "10.1136/bcr-2018-226934"
+  title: "Case of steroid-resistant Crohn's-associated bronchiolitis in the setting of quiescent gastrointestinal disease treated with infliximab"
+  authors: "Chuah CS, Noble C, Leitch A"
+  venue: "BMJ Case Reports"
+  year: 2018
+  doi: "10.1136/bcr-2018-226934"
+
+- id: "10.1186/1749-8090-8-184"
+  title: "Hydrogen ion concentration and coronary artery bypass graft surgery with and without cardiopulmonary bypass"
+  authors: "CS Chuah, R Kirkbride, P Alston, J Irons"
+  venue: "Journal of Cardiothoracic Surgery"
+  year: 2013
+  doi: "10.1186/1749-8090-8-184"

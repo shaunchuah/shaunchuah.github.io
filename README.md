@@ -1,180 +1,55 @@
-# Shaun Chuah's Personal Website
+# shaunchuah.github.io
 
-[![Hugo](https://img.shields.io/badge/Hugo-0.164.0-blue.svg)](https://gohugo.io/)
-[![PaperMod](https://img.shields.io/badge/Theme-PaperMod-green.svg)](https://github.com/adityatelange/hugo-PaperMod)
-[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue.svg)](https://pages.github.com/)
+Source for [shaunchuah.github.io](https://shaunchuah.github.io/), my personal site: writing, projects and publications.
 
-This is the source code for my personal website and blog, hosted at [shaunchuah.github.io](https://shaunchuah.github.io/). The site serves as both a professional portfolio and a platform for sharing my thoughts on gastroenterology, inflammatory bowel disease (IBD), artificial intelligence, bioinformatics, and software development.
+Built with [Astro](https://astro.build/) and deployed to GitHub Pages by GitHub Actions on every push to `main`.
 
-## About
+## Local development
 
-I'm Shaun Chuah, an academic gastroenterologist at the University of Glasgow with a passion for applying machine learning and AI to improve outcomes in Inflammatory Bowel Disease. Through this blog, I share insights from my research, tutorials on bioinformatics and web development, and explorations of emerging technologies in healthcare.
-
-### Key Features
-
-- **Blog Posts**: Technical articles on AI, bioinformatics pipelines, web development, and medical research
-- **Projects Portfolio**: Showcase of my work including ChatIBD, clinical studies, and software tools
-- **Publications**: Academic publications in gastroenterology and IBD research
-- **Search Functionality**: Built-in search powered by Fuse.js
-- **Responsive Design**: Mobile-friendly layout using the PaperMod theme
-- **Fast Loading**: Optimized with Hugo's static generation and minification
-
-## Technology Stack
-
-- **Static Site Generator**: [Hugo](https://gohugo.io/) v0.164.0
-- **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod) - A fast, clean, and responsive theme
-- **Deployment**: GitHub Pages with GitHub Actions CI/CD
-- **Analytics**: Google Analytics
-- **Syntax Highlighting**: Chroma with Catppuccin Frappé theme
-- **Search**: Fuse.js for client-side search
-
-## Local Development
-
-### Prerequisites
-
-- [Hugo](https://gohugo.io/getting-started/installing/) (Extended version)
-- [Git](https://git-scm.com/)
-- Optional: [Node.js](https://nodejs.org/) (if you need to modify assets)
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/shaunchuah/shaunchuah.github.io.git
-   cd shaunchuah.github.io
-   ```
-
-2. **Initialize submodules** (for the PaperMod theme):
-
-   ```bash
-   git submodule update --init --recursive
-   ```
-
-3. **Install Hugo** (if not already installed):
-
-   **macOS:**
-
-   ```bash
-   brew install hugo
-   ```
-
-   **Linux:**
-
-   ```bash
-   # Ubuntu/Debian
-   sudo apt-get install hugo
-
-   # Or download binary
-   wget https://github.com/gohugoio/hugo/releases/download/v0.164.0/hugo_extended_0.164.0_linux-amd64.tar.gz
-   tar -xzf hugo_extended_0.164.0_linux-amd64.tar.gz
-   sudo mv hugo /usr/local/bin/
-   ```
-
-   **Windows:**
-
-   ```powershell
-   choco install hugo-extended
-   # Or download from https://github.com/gohugoio/hugo/releases
-   ```
-
-### Running Locally
-
-1. **Start the development server:**
-
-   ```bash
-   hugo server -D --baseURL http://localhost:1313/
-   ```
-
-2. **Open your browser** and navigate to `http://localhost:1313/`
-
-The `-D` flag includes draft posts in the build. Remove it for production builds.
-
-The explicit `--baseURL` is important for local development because `hugo.yaml` sets the production URL to `https://shaunchuah.github.io/`. PaperMod renders navigation links using Hugo's absolute URL helpers, so running `hugo server` without a local `--baseURL` can make navbar links point to production instead of `localhost:1313`.
-
-### Creating Content
-
-#### New Blog Post
+Requires Node.js 22.12 or later.
 
 ```bash
-hugo new posts/your-post-title.md
+npm install
+npm run dev
 ```
 
-This creates a new post in `content/posts/` with the default archetype.
-
-#### New Page
+The dev server runs at http://localhost:4321. Search only works on a production build:
 
 ```bash
-hugo new your-page.md
+npm run build
+npm run preview
 ```
 
-#### Content Structure
+## Adding content
 
-- `content/posts/` - Blog posts
-- `content/projects.md` - Projects page
-- `content/publications.md` - Publications page
-- `content/archives.md` - Archive page
-- `content/search.md` - Search page
+| What | Where |
+| --- | --- |
+| Post | `src/content/posts/<slug>.md`, served at `/posts/<slug>/` |
+| Project | `src/content/projects/<slug>.md` (set `featured: true` to show it with a screenshot on the homepage) |
+| Publication | `src/data/publications.yaml`, newest first (set `selected: true` to show it on the homepage) |
+| Images for posts | `public/media/`, linked as `/media/<file>` |
+| Project screenshots | `src/assets/projects/` |
 
-### Building for Production
+Post front matter:
 
-```bash
-# Build the site
-hugo --minify
-
-# The generated site will be in the `public/` directory
-```
-
-## Deployment
-
-The site is automatically deployed to GitHub Pages using GitHub Actions. The workflow:
-
-1. Triggers on pushes to the `main` branch
-2. Builds the Hugo site
-3. Deploys to GitHub Pages
-
-### Manual Deployment
-
-If you need to deploy manually:
-
-1. Ensure you're on the `main` branch
-2. Push your changes:
-
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push origin main
-   ```
-
-The GitHub Actions workflow will handle the rest.
-
-## Configuration
-
-The site configuration is in `hugo.yaml`. Key settings include:
-
-- **Base URL**: `https://shaunchuah.github.io/`
-- **Theme**: PaperMod
-- **Analytics**: Google Analytics ID configured
-- **Social Links**: Email, X and GitHub
-- **Menu Items**: Home, Search, Projects, Publications, Tags, Archives
-
-### Customizing
-
-- **Theme Customization**: Modify files in `assets/css/extended/` or `layouts/_partials/`
-- **Home Page**: Edit `layouts/_partials/home_info.html` and corresponding params in `hugo.yaml`
-- **Social Icons**: Configure in `hugo.yaml` under `params.socialIcons`
-
-## License
-
-The content of this website is © Shaun Chuah, unless otherwise noted. The Hugo theme (PaperMod) is licensed under the MIT License.
-
-## Contact
-
-- **Website**: [shaunchuah.github.io](https://shaunchuah.github.io/)
-- **Twitter**: [@drshaunchuah](https://x.com/drshaunchuah)
-- **GitHub**: [shaunchuah](https://github.com/shaunchuah)
-- **Email**: [shaun.chuah@glasgow.ac.uk](mailto:shaun.chuah@glasgow.ac.uk)
-
+```yaml
 ---
+title: 'Post title'
+date: 2026-06-04T09:00:00Z
+tags: ["agentic ai", "foundry120"]
+description: Optional one-line summary for search results and link previews.
+draft: false
+---
+```
 
-Built with ❤️ using Hugo and PaperMod theme
+Second-level headings (`##`) are numbered automatically and listed in the post's contents, so don't number them by hand.
+
+## Structure
+
+- `src/pages/` routes: home, writing, posts, tags, projects, publications, search, RSS (`/index.xml`)
+- `src/layouts/Base.astro` page shell, metadata and analytics
+- `src/components/` header, footer, post lists, project cards, publication entries
+- `src/styles/global.css` the whole design: a 12-column grid with one red accent
+- `src/content.config.ts` content schemas
+
+Search is built with [Pagefind](https://pagefind.app/) after `astro build`.

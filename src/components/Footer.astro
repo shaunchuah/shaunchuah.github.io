@@ -1,0 +1,20 @@
+---
+import { SITE } from '../consts';
+
+interface Props {
+  editPath?: string;
+}
+
+const { editPath } = Astro.props;
+---
+
+<footer class="site-footer row">
+  <div class="label muted">Glasgow, Scotland</div>
+  <div class="main links">
+    <a href={`mailto:${SITE.email}`}>Email</a>
+    <a href={SITE.github}>GitHub</a>
+    <a href={SITE.x}>X</a>
+    <a href="/index.xml">RSS</a>
+    {editPath && <a class="edit" href={`${SITE.repo}/edit/main/${editPath}`}>Edit on GitHub</a>}
+  </div>
+</footer>
