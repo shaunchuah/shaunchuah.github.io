@@ -1,9 +1,7 @@
 ---
 title: 'Agentic AI and the Future of Medicine'
 date: 2025-10-06T09:54:00Z
-tags: ["AI", "IBD", "medicine"]
-draft: false
-description: ""
+tags: ["AI", "IBD"]
 ---
 
 I didn’t expect AI to change the way I code this much. This year alone, two models — Grok Code Fast 1 and GPT-5-Codex — have transformed how I work. Grok handles the small stuff, like fixing my poorly named variables. GPT-5-Codex, on the other hand, can build entire features on its own — for example, adding speech input with the Web Speech API.

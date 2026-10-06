@@ -1,23 +1,7 @@
 ---
 title: 'Launching Nextflow Pipelines From the Cloud'
 date: 2022-04-28T18:29:04Z
-tags: ["nextflow", "bioinformatics", "cloud"]
-showToc: true
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: false
-UseHugoToc: true
+tags: ["Bioinformatics", "Nextflow"]
 ---
 
 ## Why bother setting up another server to manage your Nextflow pipeline?

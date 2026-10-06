@@ -1,9 +1,7 @@
 ---
 title: 'How to Handle Big Data Uploads in Django'
 date: 2023-12-10T18:59:15Z
-tags: ["django", "data-engineering"]
-draft: false
-description: ""
+tags: ["Data engineering", "Web development"]
 ---
 
 ## Traditional File Uploads in Django

@@ -1,23 +1,7 @@
 ---
 title: 'Setting Up Azure With Nextflow'
 date: 2021-08-18T18:27:01Z
-tags: ["nextflow", "bioinformatics", "cloud"]
-showToc: true
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: false
-UseHugoToc: true
+tags: ["Bioinformatics", "Nextflow"]
 ---
 
 

@@ -1,23 +1,8 @@
 ---
 title: 'The State of Web Development'
 date: 2021-06-29T18:01:06Z
-tags: ["web development", "javascript", "python"]
-categories: ["web development"]
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
+tags: ["Web development"]
 searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
 ---
 
 I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share.

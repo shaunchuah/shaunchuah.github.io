@@ -1,9 +1,7 @@
 ---
 title: 'Multi-omic Data Orchestration'
 date: 2024-12-13T09:02:45Z
-tags: ["IBD", "data-engineering", "multi-omics"]
-draft: false
-description: ""
+tags: ["Data engineering", "IBD", "Translational research"]
 ---
 
 Over the last few years, one of the key challenges we have faced in our multi-omic translational studies is the orchestration of multi-omic datasets. In this blog post, I summarise some of the strategies we have employed to manage this complexity, after dedicating significant time to considering this problem.

@@ -1,23 +1,7 @@
 ---
 title: 'Architectural Approaches to Building Websites'
 date: 2021-07-01T18:19:49Z
-tags: ["web development"]
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: false
-UseHugoToc: true
+tags: ["Web development"]
 ---
 
 

@@ -8,6 +8,17 @@ export default defineConfig({
   integrations: [sitemap()],
   redirects: {
     '/archives': '/posts/',
+    // Tags retired when the tag list was consolidated.
+    '/tags/agentic-ai': '/tags/ai/',
+    '/tags/llms': '/tags/ai/',
+    '/tags/medicine': '/tags/ai/',
+    '/tags/foundry120': '/posts/building-the-research-operating-system/',
+    '/tags/multi-omics': '/tags/data-engineering/',
+    '/tags/django': '/tags/web-development/',
+    '/tags/javascript': '/tags/web-development/',
+    '/tags/python': '/tags/web-development/',
+    '/tags/docker': '/tags/bioinformatics/',
+    '/tags/cloud': '/tags/nextflow/',
   },
   markdown: {
     shikiConfig: {

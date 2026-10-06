@@ -1,23 +1,7 @@
 ---
 title: 'Getting Started With Docker for Bioinformatics'
 date: 2021-08-05T18:23:00Z
-tags: ["bioinformatics", "docker"]
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: false
-UseHugoToc: true
+tags: ["Bioinformatics"]
 ---
 
 

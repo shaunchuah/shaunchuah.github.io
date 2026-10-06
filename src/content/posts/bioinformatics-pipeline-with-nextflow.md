@@ -1,23 +1,7 @@
 ---
 title: 'How to Create Your Bioinformatics Pipeline with Nextflow'
 date: 2021-08-12T18:24:45Z
-tags: ["nextflow", "bioinformatics", "docker"]
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
-description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: false
-UseHugoToc: true
+tags: ["Bioinformatics", "Nextflow"]
 ---
 
 

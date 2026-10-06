@@ -1,9 +1,7 @@
 ---
 title: 'Building the Research Operating System We Needed'
 date: 2026-06-04T09:00:00Z
-tags: ["agentic ai", "translational research", "data engineering", "llms", "foundry120"]
-draft: false
-description: ""
+tags: ["AI", "Data engineering", "Translational research"]
 ---
 
 A while ago I wrote about the challenge of [orchestrating multi-omic data](/posts/multiomic-data-orchestration/) in translational research. That post described the problem. This one is about what we did next - we built [Foundry120](https://www.foundry120.com), a research operating system for translational science.
