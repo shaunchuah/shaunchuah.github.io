@@ -266,6 +266,15 @@ img {
   color: var(--muted);
 }
 
+.byline-name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
 .hero-title {
   margin: 0;
   font-size: clamp(32px, 5vw, 48px);
