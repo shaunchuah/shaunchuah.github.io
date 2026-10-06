@@ -11,8 +11,6 @@ const posts = defineCollection({
     tags: z.array(z.string()).default([]),
     description: z.string().optional(),
     draft: z.boolean().default(false),
-    // Hidden from search and the RSS feed but still listed and reachable.
-    searchHidden: z.boolean().default(false),
   }),
 });
 

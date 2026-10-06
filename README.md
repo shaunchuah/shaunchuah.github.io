@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-The dev server runs at http://localhost:4321. Search only works on a production build:
+The dev server runs at http://localhost:4321. To check the production build:
 
 ```bash
 npm run build
@@ -37,7 +37,7 @@ Post front matter:
 title: 'Post title'
 date: 2026-06-04T09:00:00Z
 tags: ["agentic ai", "foundry120"]
-description: Optional one-line summary for search results and link previews.
+description: Optional one-line summary for link previews and the RSS feed.
 draft: false
 ---
 ```
@@ -46,10 +46,8 @@ Second-level headings (`##`) are numbered automatically and listed in the post's
 
 ## Structure
 
-- `src/pages/` routes: home, writing, posts, tags, projects, publications, search, RSS (`/index.xml`)
+- `src/pages/` routes: home, writing, posts, tags, projects, publications, RSS (`/index.xml`)
 - `src/layouts/Base.astro` page shell, metadata and analytics
 - `src/components/` header, footer, post lists, project cards, publication entries
 - `src/styles/global.css` the whole design: a 12-column grid with one red accent
 - `src/content.config.ts` content schemas
-
-Search is built with [Pagefind](https://pagefind.app/) after `astro build`.

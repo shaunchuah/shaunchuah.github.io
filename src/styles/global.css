@@ -172,11 +172,6 @@ img {
   color: var(--red);
 }
 
-.site-nav .nav-search {
-  margin-left: auto;
-  color: var(--muted);
-}
-
 .menu-button {
   display: none;
 }
@@ -223,10 +218,6 @@ img {
   .site-nav a {
     padding: 12px 0;
     border-bottom: 1px solid var(--rule-light);
-  }
-
-  .site-nav .nav-search {
-    margin-left: 0;
   }
 
   .site-header[data-open] .site-nav {

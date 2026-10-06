@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [sitemap()],
   redirects: {
     '/archives': '/posts/',
+    '/search': '/posts/',
     // Tags retired when the tag list was consolidated.
     '/tags/agentic-ai': '/tags/ai/',
     '/tags/llms': '/tags/ai/',

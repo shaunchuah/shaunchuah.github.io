@@ -39,7 +39,7 @@ const contents = headings.filter((h) => h.depth === 2);
   publishedTime={date}
   editPath={`src/content/posts/${post.id}.md`}
 >
-  <article data-pagefind-body={post.data.searchHidden ? undefined : true}>
+  <article>
     <header class="post-head row">
       <div class="label post-meta">
         <time datetime={date.toISOString()}>{longDate(date)}</time>
@@ -51,7 +51,7 @@ const contents = headings.filter((h) => h.depth === 2);
     </header>
 
     <div class="section row" style="padding-bottom: 0">
-      <aside class="label post-aside" data-pagefind-ignore>
+      <aside class="label post-aside">
         {
           contents.length > 1 && (
             <nav aria-labelledby="contents-title">

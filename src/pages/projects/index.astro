@@ -46,7 +46,7 @@ const sections = await Promise.all(
         <div class="main projects-detail">
           {'intro' in section && <p class="group-intro" set:html={section.intro} />}
           {section.projects.map(({ project, Content }, i) => (
-            <article class="project-detail" data-pagefind-body>
+            <article class="project-detail">
               {project.data.image && (
                 <a href={project.data.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
                   <Image

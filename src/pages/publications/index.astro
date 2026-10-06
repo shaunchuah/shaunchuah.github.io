@@ -16,7 +16,7 @@ const pubs = (await getCollection('publications')).sort((a, b) => a.data.order -
 
   <section class="section row" aria-label="All publications">
     <div class="label"></div>
-    <div class="main" data-pagefind-body>
+    <div class="main">
       {pubs.map((pub) => <Publication pub={pub} />)}
     </div>
   </section>
