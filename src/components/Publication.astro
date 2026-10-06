@@ -18,7 +18,7 @@ const etAl = truncated || /\bet al\b/.test(pub.data.authors);
 const isMe = (name: string) => /^(Chuah CS|CS Chuah)$/.test(name);
 ---
 
-<a class="pub" href={`https://doi.org/${doi}`}>
+<a class="pub" href={`https://doi.org/${doi}`} target="_blank" rel="noopener">
   <span class="pub-year">{year}</span>
   <span class="pub-body">
     <span class="pub-title">{title}</span>

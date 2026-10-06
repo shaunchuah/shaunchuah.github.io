@@ -7,7 +7,6 @@ order: 1
 featured: true
 image: ../../assets/projects/foundry120.webp
 summary: A research operating system for translational science. It follows a sample from the freezer box to an analysis-ready cohort.
-role: Designed, built, lead
 ---
 
 Foundry120 is a research operating system for translational science. It keeps sample tracking, clinical data, omics and documents in one governed environment, so a study team can follow a sample from the freezer box to an analysis-ready cohort.

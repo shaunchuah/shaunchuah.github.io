@@ -9,7 +9,7 @@ const groups = [
     key: 'studies',
     title: 'Clinical studies',
     intro:
-      'I helped set up these studies as part of Prof Gwo-Tzer Ho\'s <a href="https://www.gla.ac.uk/schools/infectionimmunity/staff/gwotzerho/theguttranslationalresearchgroup/">Gut Translational Research Group</a> at the University of Glasgow, and built their websites.',
+      'I helped set up these studies as part of Prof Gwo-Tzer Ho\'s <a href="https://www.gla.ac.uk/schools/infectionimmunity/staff/gwotzerho/theguttranslationalresearchgroup/" target="_blank" rel="noopener">Gut Translational Research Group</a> at the University of Glasgow, and built their websites.',
   },
   { key: 'community', title: 'Community' },
   { key: 'teaching', title: 'Teaching' },
@@ -33,7 +33,6 @@ const sections = await Promise.all(
     <div class="label"></div>
     <div class="main">
       <h1 class="page-title">Projects</h1>
-      <p class="page-lede">Software I've built for research and clinical care, and the studies and communities it supports.</p>
     </div>
   </section>
 
@@ -49,7 +48,7 @@ const sections = await Promise.all(
           {section.projects.map(({ project, Content }, i) => (
             <article class="project-detail" data-pagefind-body>
               {project.data.image && (
-                <a href={project.data.url} tabindex="-1" aria-hidden="true">
+                <a href={project.data.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
                   <Image
                     src={project.data.image}
                     alt=""
@@ -64,8 +63,7 @@ const sections = await Promise.all(
                     {s + 1}.{i + 1}
                   </span>
                   <h3>{project.data.title}</h3>
-                  <span class="muted">{project.data.role}</span>
-                  <a class="more-link" href={project.data.url}>
+                  <a class="more-link" href={project.data.url} target="_blank" rel="noopener">
                     {project.data.urlLabel} →
                   </a>
                 </div>

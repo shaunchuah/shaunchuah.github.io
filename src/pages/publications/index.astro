@@ -4,7 +4,6 @@ import Publication from '../../components/Publication.astro';
 import Base from '../../layouts/Base.astro';
 
 const pubs = (await getCollection('publications')).sort((a, b) => a.data.order - b.data.order);
-const firstAuthor = pubs.filter((p) => /^(Chuah CS|CS Chuah)\b/.test(p.data.authors)).length;
 ---
 
 <Base title="Publications" description="Peer-reviewed publications and preprints by Shaun Chuah.">
@@ -12,9 +11,6 @@ const firstAuthor = pubs.filter((p) => /^(Chuah CS|CS Chuah)\b/.test(p.data.auth
     <div class="label"></div>
     <div class="main">
       <h1 class="page-title">Publications</h1>
-      <p class="page-lede">
-        {pubs.length} papers and preprints, {firstAuthor} as first author. Each links to its DOI.
-      </p>
     </div>
   </section>
 

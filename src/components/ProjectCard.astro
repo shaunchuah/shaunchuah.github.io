@@ -8,15 +8,15 @@ interface Props {
 }
 
 const { project, index } = Astro.props;
-const { title, url, urlLabel, image, summary, role } = project.data;
+const { title, url, urlLabel, image, summary } = project.data;
 ---
 
-<a class="project-card" href={url}>
+<a class="project-card" href={url} target="_blank" rel="noopener">
   {image && <Image src={image} alt={`${title} screenshot`} widths={[600, 1000]} sizes="(max-width: 720px) 100vw, 420px" />}
   <span class="body">
     <span class="index">{index}</span>
     <span class="name">{title}</span>
     <span class="summary">{summary}</span>
-    <span class="role">{role} · {urlLabel}</span>
+    <span class="site">{urlLabel}</span>
   </span>
 </a>

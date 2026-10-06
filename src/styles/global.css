@@ -7,6 +7,7 @@
   --ink-3: #4a4a4a;
   --muted: #6b6b6b;
   --rule-light: #dddddd;
+  --rule-faint: #e6e6e6;
   --paper: #ffffff;
   --paper-2: #f2f2f2;
   --red: #d0261c;
@@ -147,14 +148,14 @@ img {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-size: 15px;
   font-weight: 600;
 }
 
 .brand img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -191,8 +192,8 @@ img {
   }
 
   .brand img {
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
   }
 
   .menu-button {
@@ -386,6 +387,7 @@ img {
   object-fit: cover;
   object-position: left top;
   background: var(--paper-2);
+  border: 1px solid var(--rule-faint);
 }
 
 .project-card .body {
@@ -410,7 +412,7 @@ img {
   color: var(--ink-3);
 }
 
-.project-card .role {
+.project-card .site {
   margin-top: 4px;
   padding-top: 8px;
   border-top: 1px solid var(--rule-light);
@@ -796,6 +798,7 @@ img {
   object-position: left top;
   margin-bottom: 24px;
   background: var(--paper-2);
+  border: 1px solid var(--rule-faint);
 }
 
 .detail-head {
@@ -815,7 +818,8 @@ img {
 }
 
 .detail-head .more-link {
-  margin-top: 8px;
+  margin-top: 2px;
+  padding: 0;
 }
 
 .detail-body {

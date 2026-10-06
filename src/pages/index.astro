@@ -43,11 +43,9 @@ const selected = (await getCollection('publications'))
       <div class="project-list">
         {
           others.map((project) => (
-            <a href={project.data.url}>
+            <a href={project.data.url} target="_blank" rel="noopener">
               <span class="name">{project.data.title}</span>
-              <span class="muted">
-                {project.data.summary} · {project.data.role.toLowerCase()}
-              </span>
+              <span class="muted">{project.data.summary}</span>
             </a>
           ))
         }
