@@ -1,7 +1,7 @@
 export const SITE = {
   title: 'Shaun Chuah',
   description:
-    'IBD gastroenterologist and AI engineer at the University of Glasgow. Writing about translational research, clinical data infrastructure and applied AI.',
+    'IBD consultant gastroenterologist and clinical academic at the University of Glasgow, writing about translational research, clinical data infrastructure and applied AI.',
   author: 'Shaun Chuah',
   email: 'shaun.chuah@glasgow.ac.uk',
   github: 'https://github.com/shaunchuah',
