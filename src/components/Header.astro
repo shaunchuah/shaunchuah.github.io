@@ -1,7 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import profile from '../assets/profile.jpg';
-
 const links = [
   { href: '/posts/', label: 'Writing', match: ['/posts/', '/tags/'] },
   { href: '/projects/', label: 'Projects', match: ['/projects/'] },
@@ -13,10 +10,7 @@ const isCurrent = (match: string[]) => match.some((prefix) => path.startsWith(pr
 
 <header class="site-header row" data-site-header>
   <div class="label">
-    <a class="brand" href="/">
-      <Image src={profile} alt="" width={96} height={96} loading="eager" />
-      <span>Shaun Chuah</span>
-    </a>
+    <a class="brand" href="/">Shaun Chuah</a>
   </div>
   <button
     class="menu-button"

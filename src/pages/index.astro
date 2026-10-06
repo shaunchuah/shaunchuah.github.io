@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import profile from '../assets/profile.jpg';
 import ProjectCard from '../components/ProjectCard.astro';
 import Publication from '../components/Publication.astro';
 import YearGroups from '../components/YearGroups.astro';
@@ -17,7 +19,10 @@ const selected = (await getCollection('publications'))
 
 <Base>
   <section class="hero row">
-    <div class="label"></div>
+    <div class="label hero-byline">
+      <Image src={profile} alt="Shaun Chuah" width={192} height={192} loading="eager" />
+      <p class="quals">MBChB MRCP(UK)<br />ESEGH MD</p>
+    </div>
     <div class="main">
       <h1 class="hero-title">IBD gastro&shy;enterologist.<br /><span>AI engineer.</span></h1>
       <p class="hero-lede">
