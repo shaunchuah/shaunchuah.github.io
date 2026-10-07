@@ -239,6 +239,18 @@ img {
   font-weight: 500;
 }
 
+.site-footer .links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.site-footer .icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
 .site-footer .links .edit {
   margin-left: auto;
   color: var(--muted);
@@ -301,6 +313,27 @@ img {
   color: var(--ink-2);
 }
 
+.hero-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.hero-contact:hover {
+  color: var(--ink);
+}
+
+.hero-contact .icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
 @media (max-width: 720px) {
   .hero {
     padding: 48px 0 64px;
@@ -311,17 +344,23 @@ img {
     font-size: 17px;
   }
 
+  .hero-contact {
+    margin-top: 20px;
+    overflow-wrap: anywhere;
+  }
+
   .hero-byline {
     flex-basis: 100%;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-byline img {
-    width: 80px;
-    height: 80px;
+    width: 72px;
+    height: 72px;
   }
 }
 

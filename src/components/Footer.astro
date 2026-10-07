@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../consts';
+import Icon from './Icon.astro';
 
 interface Props {
   editPath?: string;
@@ -8,14 +9,20 @@ interface Props {
 const { editPath } = Astro.props;
 ---
 
-<footer class="site-footer row">
-  <div class="label muted">University of Glasgow</div>
-  <div class="main links">
-    <a href={`mailto:${SITE.email}`}>Email</a>
-    <a href={SITE.orcid}>ORCID</a>
-    <a href={SITE.github}>GitHub</a>
-    <a href={SITE.x}>X</a>
-    <a href="/index.xml">RSS</a>
-    {editPath && <a class="edit" href={`${SITE.repo}/edit/main/${editPath}`}>Edit on GitHub</a>}
+<footer class="site-footer">
+  <div class="links">
+    <a href={`mailto:${SITE.email}`}><Icon name="ph:envelope-simple" />Email</a>
+    <a href={SITE.orcid}><Icon name="academicons:orcid" />ORCID</a>
+    <a href={SITE.github}><Icon name="ph:github-logo" />GitHub</a>
+    <a href={SITE.x}><Icon name="ph:x-logo" />X</a>
+    <a href="/index.xml"><Icon name="ph:rss-simple" />RSS</a>
+    {
+      editPath && (
+        <a class="edit" href={`${SITE.repo}/edit/main/${editPath}`}>
+          <Icon name="ph:pencil-simple" />
+          Edit on GitHub
+        </a>
+      )
+    }
   </div>
 </footer>

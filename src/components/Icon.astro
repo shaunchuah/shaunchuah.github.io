@@ -1,0 +1,18 @@
+---
+import academicons from '@iconify-json/academicons/icons.json';
+import ph from '@iconify-json/ph/icons.json';
+import { getIconData, iconToSVG } from '@iconify/utils';
+
+const sets = { ph, academicons };
+
+interface Props {
+  name: `${keyof typeof sets}:${string}`;
+}
+
+const [prefix, icon] = Astro.props.name.split(':') as [keyof typeof sets, string];
+const data = getIconData(sets[prefix], icon);
+if (!data) throw new Error(`Unknown icon: ${Astro.props.name}`);
+const { attributes, body } = iconToSVG(data);
+---
+
+<svg class="icon" viewBox={attributes.viewBox} aria-hidden="true" set:html={body} />
