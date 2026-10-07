@@ -54,6 +54,7 @@ export function postSchema(post: Post) {
     url,
     mainEntityOfPage: url,
     datePublished: post.data.date.toISOString(),
+    dateModified: (post.data.updated ?? post.data.date).toISOString(),
     image: new URL(ogImagePath(postUrl(post)), SITE.url).href,
     keywords: post.data.tags,
     inLanguage: 'en-GB',

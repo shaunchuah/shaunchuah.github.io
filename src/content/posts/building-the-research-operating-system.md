@@ -2,6 +2,7 @@
 title: 'Building the Research Operating System We Needed'
 description: "Why we built Foundry120, a research operating system for translational science, and how its AI agent, Helix, turns plain-English questions into governed queries."
 date: 2026-06-04T09:00:00Z
+updated: 2026-10-07
 tags: ["AI", "Data engineering", "Translational research"]
 ---
 

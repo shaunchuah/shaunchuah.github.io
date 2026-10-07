@@ -8,6 +8,8 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    /** Set when a post is meaningfully edited; feeds the sitemap, structured data and the post header. */
+    updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     description: z.string().optional(),
     draft: z.boolean().default(false),

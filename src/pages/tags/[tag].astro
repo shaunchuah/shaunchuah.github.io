@@ -1,5 +1,6 @@
 ---
 import YearGroups from '../../components/YearGroups.astro';
+import { SITE } from '../../consts';
 import Base from '../../layouts/Base.astro';
 import { getPosts, getTags, type Post } from '../../lib/content';
 
@@ -14,9 +15,17 @@ interface Props {
 }
 
 const { label, posts } = Astro.props;
+
+// Name as many post titles as fit in a search-result snippet (about 160 characters), at least one.
+const lead = `${posts.length} ${posts.length === 1 ? 'post' : 'posts'} by ${SITE.author} on ${label}`;
+const quoted = posts.map((post) => `“${post.data.title}”`);
+const list = (items: string[]) => (items.length > 1 ? `${items.slice(0, -1).join(', ')} and ${items.at(-1)}` : items[0]);
+let shown = 1;
+while (shown < quoted.length && `${lead}, including ${list(quoted.slice(0, shown + 1))}.`.length <= 160) shown++;
+const description = `${lead}${shown < posts.length ? ', including ' : ': '}${list(quoted.slice(0, shown))}.`;
 ---
 
-<Base title={`Tagged ${label}`} description={`Posts tagged ${label}.`}>
+<Base title={`Tagged ${label}`} description={description}>
   <section class="page-head row">
     <div class="label post-meta">
       <a class="index" href="/posts/">← All writing</a>

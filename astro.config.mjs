@@ -1,11 +1,35 @@
 // @ts-check
+import { readdirSync, readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import { parse as parseYaml } from 'yaml';
+
+const site = 'https://shaunchuah.github.io';
+
+// Last-modified dates for the sitemap: a post's `updated` date, else its publish date. Other pages get
+// none, since a guessed date is worse than no date. Git history can't be used: CI checks out one commit.
+const postDir = new URL('./src/content/posts/', import.meta.url);
+const lastmod = new Map(
+  readdirSync(postDir)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => {
+      const frontmatter = parseYaml(readFileSync(new URL(file, postDir), 'utf8').split(/^---$/m)[1]);
+      const date = new Date(frontmatter.updated ?? frontmatter.date);
+      return [`${site}/posts/${file.replace(/\.md$/, '')}/`, date.toISOString()];
+    }),
+);
 
 export default defineConfig({
-  site: 'https://shaunchuah.github.io',
+  site,
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      serialize(item) {
+        const date = lastmod.get(item.url);
+        return date ? { ...item, lastmod: date } : item;
+      },
+    }),
+  ],
   redirects: {
     '/archives': '/posts/',
     '/search': '/posts/',

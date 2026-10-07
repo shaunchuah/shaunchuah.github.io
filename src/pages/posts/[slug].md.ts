@@ -11,8 +11,13 @@ export async function getStaticPaths() {
 
 export function GET({ props }: APIContext<{ post: Post }>) {
   const { post } = props;
-  const { title, date, tags } = post.data;
-  const meta = [`By ${SITE.author}`, longDate(date), ...(tags.length ? [tags.join(', ')] : [])].join(' · ');
+  const { title, date, updated, tags } = post.data;
+  const meta = [
+    `By ${SITE.author}`,
+    longDate(date),
+    ...(updated ? [`Updated ${longDate(updated)}`] : []),
+    ...(tags.length ? [tags.join(', ')] : []),
+  ].join(' · ');
   const markdown = [
     `# ${title}`,
     meta,

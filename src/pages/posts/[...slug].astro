@@ -29,7 +29,7 @@ interface Props {
 
 const { post, newer, older } = Astro.props;
 const { Content, headings } = await render(post);
-const { title, date, tags } = post.data;
+const { title, date, updated, tags } = post.data;
 const contents = headings.filter((h) => h.depth === 2);
 ---
 
@@ -38,6 +38,7 @@ const contents = headings.filter((h) => h.depth === 2);
   description={excerpt(post)}
   type="article"
   publishedTime={date}
+  modifiedTime={updated}
   editPath={`src/content/posts/${post.id}.md`}
   schema={postSchema(post)}
   markdownPath={`/posts/${post.id}.md`}
@@ -46,6 +47,13 @@ const contents = headings.filter((h) => h.depth === 2);
     <header class="post-head row">
       <div class="label post-meta">
         <time datetime={date.toISOString()}>{longDate(date)}</time>
+        {
+          updated && (
+            <span class="muted">
+              Updated <time datetime={updated.toISOString()}>{longDate(updated)}</time>
+            </span>
+          )
+        }
         <span class="muted">{readingMinutes(post.body)} min read</span>
       </div>
       <div class="main">
