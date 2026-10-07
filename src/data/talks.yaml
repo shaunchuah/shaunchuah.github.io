@@ -1,4 +1,19 @@
-# Invited talks, newest first. Slides are not published.
+# Talks and media appearances, newest first. Slides are not published.
+# `kind` labels recordings (Podcast, Video); `url` links the title out.
+
+- id: talk-python-560
+  title: "Building a Research OS: From Django to 30,000 Samples"
+  event: "Talk Python To Me, episode 560"
+  kind: Podcast
+  url: https://talkpython.fm/episodes/show/560/building-a-research-os-from-django-to-30-000-samples
+  year: 2026
+
+- id: microsoft-research-exchange-2026
+  title: "Fixing fragmented research data with AI"
+  event: "Microsoft Academic Research Exchange"
+  kind: Video
+  url: https://www.youtube.com/watch?v=ldIfC6bIJhw
+  year: 2026
 
 - id: lilly-gut-feelings-2026
   title: "Promises and Pitfalls of GenAI: From Clinical Knowledge to Clinical Workflow"

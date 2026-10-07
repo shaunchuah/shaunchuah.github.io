@@ -5,13 +5,16 @@ interface Props {
   talk: CollectionEntry<'talks'>;
 }
 
-const { title, event, note } = Astro.props.talk.data;
+const { title, event, note, kind, url } = Astro.props.talk.data;
+const Tag = url ? 'a' : 'div';
 ---
 
-<div class="pub">
+<Tag class="pub" {...url && { href: url, target: '_blank', rel: 'noopener' }}>
   <span class="pub-title">{title}</span>
   <span class="pub-meta">
+    {kind && <span class="kind">{kind}</span>}
+    {kind && ' · '}
     {event}
     {note && ` · ${note}`}
   </span>
-</div>
+</Tag>

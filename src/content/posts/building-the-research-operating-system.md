@@ -62,3 +62,5 @@ In the agentic AI post I imagined 'software-defined' hospitals - data-sharing, A
 Foundry120 is my attempt at building it. It is still early, but we are gaining huge value, time savings, and we see our team members spend more time focusing on fun and interesting research questions instead of trudging through tedious spreadsheets.
 
 And a sign of how fast this all moves: in my [last post](/posts/agentic-ai-and-the-future-of-medicine/) I was discussing Grok Code Fast 1 and GPT-5-Codex. Both have already aged like milk - at this point of writing, we're on Opus 4.8 and GPT-5.5.
+
+*Update: I talked through how Foundry120 came about on [Talk Python To Me, episode 560](https://talkpython.fm/episodes/show/560/building-a-research-os-from-django-to-30-000-samples), and presented it at the [Microsoft Academic Research Exchange](https://www.youtube.com/watch?v=ldIfC6bIJhw).*

@@ -32,7 +32,7 @@ export async function getOgCards(): Promise<OgCard[]> {
     { key: 'posts', kind: 'page', title: 'Writing' },
     { key: 'projects', kind: 'page', title: 'Projects' },
     { key: 'publications', kind: 'page', title: 'Publications' },
-    { key: 'talks', kind: 'page', title: 'Invited talks' },
+    { key: 'talks', kind: 'page', title: 'Talks & media' },
     { key: 'tags', kind: 'page', title: 'Tags', kicker: 'Writing' },
   ];
   for (const post of posts) {

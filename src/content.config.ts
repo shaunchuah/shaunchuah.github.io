@@ -56,6 +56,8 @@ const talks = defineCollection({
     event: z.string(),
     year: z.number(),
     note: z.string().optional(),
+    kind: z.enum(['Podcast', 'Video']).optional(),
+    url: z.url().optional(),
     order: z.number(),
   }),
 });

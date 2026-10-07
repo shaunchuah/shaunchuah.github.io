@@ -536,6 +536,11 @@ img {
   color: var(--muted);
 }
 
+.pub .pub-meta .kind {
+  font-weight: 600;
+  color: var(--red);
+}
+
 .pub .pub-meta .me {
   color: var(--ink);
 }
