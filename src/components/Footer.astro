@@ -12,9 +12,10 @@ const { editPath } = Astro.props;
 <footer class="site-footer">
   <div class="links">
     <a href={`mailto:${SITE.email}`}><Icon name="ph:envelope-simple" />Email</a>
-    <a href={SITE.orcid}><Icon name="academicons:orcid" />ORCID</a>
-    <a href={SITE.github}><Icon name="ph:github-logo" />GitHub</a>
     <a href={SITE.x}><Icon name="ph:x-logo" />X</a>
+    <a href={SITE.github}><Icon name="ph:github-logo" />GitHub</a>
+    <a href={SITE.linkedin}><Icon name="ph:linkedin-logo" />LinkedIn</a>
+    <a href={SITE.orcid}><Icon name="academicons:orcid" />ORCID</a>
     <a href="/index.xml"><Icon name="ph:rss-simple" />RSS</a>
     {
       editPath && (

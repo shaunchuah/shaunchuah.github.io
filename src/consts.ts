@@ -11,5 +11,6 @@ export const SITE = {
   github: 'https://github.com/shaunchuah',
   orcid: 'https://orcid.org/0000-0002-5936-3370',
   x: 'https://x.com/drshaunchuah',
+  linkedin: 'https://www.linkedin.com/in/shaunchuah/',
   repo: 'https://github.com/shaunchuah/shaunchuah.github.io',
 };

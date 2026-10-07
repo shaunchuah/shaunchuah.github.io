@@ -39,7 +39,7 @@ export function homeSchema() {
         'Clinical data infrastructure',
         'Artificial intelligence in medicine',
       ],
-      sameAs: [SITE.orcid, SITE.github, SITE.x],
+      sameAs: [SITE.orcid, SITE.linkedin, SITE.github, SITE.x],
     },
   ];
 }

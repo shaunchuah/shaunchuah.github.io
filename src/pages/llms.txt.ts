@@ -49,6 +49,7 @@ ${publications
 
 - Email: ${SITE.email}
 - ORCID: ${SITE.orcid}
+- LinkedIn: ${SITE.linkedin}
 - GitHub: ${SITE.github}
 - X: ${SITE.x}
 
