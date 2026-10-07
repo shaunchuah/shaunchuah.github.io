@@ -1,7 +1,7 @@
 export const SITE = {
   title: 'Shaun Chuah',
   description:
-    'IBD consultant gastroenterologist and clinical academic at the University of Glasgow, writing about translational research, clinical data infrastructure and applied AI.',
+    'IBD gastroenterologist and Clinical Senior Research Fellow at the University of Glasgow, building Foundry120 and ChatIBD for clinical research and care.',
   author: 'Shaun Chuah',
   email: 'shaun.chuah@glasgow.ac.uk',
   github: 'https://github.com/shaunchuah',

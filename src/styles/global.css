@@ -313,6 +313,17 @@ img {
   color: var(--ink-2);
 }
 
+.hero-lede a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hero-lede a:hover {
+  color: var(--red);
+}
+
 .hero-contact {
   display: inline-flex;
   align-items: center;

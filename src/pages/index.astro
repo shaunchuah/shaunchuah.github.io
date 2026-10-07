@@ -31,9 +31,15 @@ const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.dat
     <div class="main">
       <h1 class="hero-title">IBD gastro&shy;enterologist.<br /><span>AI engineer.</span></h1>
       <p class="hero-lede">
-        Clinical Senior Research Fellow at the University of Glasgow and Honorary Consultant Gastroenterologist
-        at NHS Greater Glasgow and Clyde. I work on inflammatory bowel disease, clinical data infrastructure and
-        applied AI, and build the software our research runs on.
+        I'm a Clinical Senior Research Fellow at the University of Glasgow and Honorary Consultant
+        Gastroenterologist at NHS Greater Glasgow and Clyde. Alongside clinical work in inflammatory bowel
+        disease, I build the software our research runs on, including <a
+          href="https://www.foundry120.com"
+          target="_blank"
+          rel="noopener">Foundry120</a>, a research data platform that tracks more than 30,000 samples, and <a
+          href="https://chatibd.com"
+          target="_blank"
+          rel="noopener">ChatIBD</a>, an AI guideline assistant for IBD clinicians.
       </p>
       <a class="hero-contact" href={`mailto:${SITE.email}`}><Icon name="ph:envelope-simple" />{SITE.email}</a>
     </div>
