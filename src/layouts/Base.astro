@@ -14,6 +14,10 @@ interface Props {
   publishedTime?: Date;
   editPath?: string;
   noindex?: boolean;
+  /** JSON-LD structured data for this page. */
+  schema?: object;
+  /** Plain Markdown copy of this page, for AI agents. */
+  markdownPath?: string;
 }
 
 const {
@@ -23,9 +27,11 @@ const {
   publishedTime,
   editPath,
   noindex = false,
+  schema,
+  markdownPath,
 } = Astro.props;
 
-const pageTitle = title ? `${title} · ${SITE.title}` : SITE.title;
+const pageTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Every indexed page has a generated 1200 x 630 card (see src/lib/og.ts); the 404 page falls back to the photo.
 const ogImage = new URL(noindex ? profile.src : ogImagePath(Astro.url.pathname), Astro.site);
@@ -49,10 +55,11 @@ const ogImage = new URL(noindex ? profile.src : ogImagePath(Astro.url.pathname),
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/index.xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    {markdownPath && <link rel="alternate" type="text/markdown" href={markdownPath} />}
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE.title} />
-    <meta property="og:title" content={title ?? SITE.title} />
+    <meta property="og:title" content={title ?? pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
@@ -67,6 +74,7 @@ const ogImage = new URL(noindex ? profile.src : ogImagePath(Astro.url.pathname),
     {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
     <meta name="twitter:card" content={noindex ? 'summary' : 'summary_large_image'} />
     <meta name="twitter:creator" content="@drshaunchuah" />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />}
 
     <Font cssVariable="--font-sans" preload />
     <Font cssVariable="--font-mono" />

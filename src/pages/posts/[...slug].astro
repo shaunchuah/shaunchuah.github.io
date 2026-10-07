@@ -11,6 +11,7 @@ import {
   readingMinutes,
   tagSlug,
 } from '../../lib/content';
+import { postSchema } from '../../lib/schema';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -38,6 +39,8 @@ const contents = headings.filter((h) => h.depth === 2);
   type="article"
   publishedTime={date}
   editPath={`src/content/posts/${post.id}.md`}
+  schema={postSchema(post)}
+  markdownPath={`/posts/${post.id}.md`}
 >
   <article>
     <header class="post-head row">

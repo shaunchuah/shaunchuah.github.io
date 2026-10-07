@@ -11,6 +11,7 @@ import Icon from '../components/Icon.astro';
 import Base from '../layouts/Base.astro';
 import { SITE } from '../consts';
 import { getPosts, groupByYear } from '../lib/content';
+import { homeSchema } from '../lib/schema';
 
 const posts = await getPosts();
 const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
@@ -22,7 +23,7 @@ const selected = (await getCollection('publications'))
 const talks = (await getCollection('talks')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Base>
+<Base schema={homeSchema()}>
   <section class="hero row">
     <div class="label hero-byline">
       <Image src={profile} alt="Shaun Chuah" width={192} height={192} loading="eager" />
