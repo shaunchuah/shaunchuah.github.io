@@ -118,7 +118,7 @@ function frame(kicker: string | undefined, body: Node, avatar?: string): Node {
       h(
         'div',
         { display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', fontSize: 24, color: MUTED },
-        h('span', {}, 'shaunchuah.github.io'),
+        h('span', {}, 'shaunchuah.com'),
         h('div', { width: 72, height: 8, background: RED }),
       ),
     ),

@@ -1,7 +1,7 @@
 export const SITE = {
   title: 'Shaun Chuah',
   // Keep in step with `site` in astro.config.mjs.
-  url: 'https://shaunchuah.github.io/',
+  url: 'https://shaunchuah.com/',
   description:
     'IBD gastroenterologist and Clinical Senior Research Fellow at the University of Glasgow, building Foundry120 and ChatIBD for clinical research and care.',
   author: 'Shaun Chuah',

@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 import { parse as parseYaml } from 'yaml';
 
-const site = 'https://shaunchuah.github.io';
+const site = 'https://shaunchuah.com';
 
 // Last-modified dates for the sitemap: a post's `updated` date, else its publish date. Other pages get
 // none, since a guessed date is worse than no date. Git history can't be used: CI checks out one commit.
