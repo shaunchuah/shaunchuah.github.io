@@ -17,7 +17,7 @@ export async function GET() {
 
 > ${SITE.description}
 
-Shaun Chuah is a Clinical Senior Research Fellow at the University of Glasgow and Honorary Consultant Gastroenterologist at NHS Greater Glasgow and Clyde. Alongside clinical work in inflammatory bowel disease (IBD), he builds the software his research runs on, including Foundry120, a research data platform that tracks more than 30,000 samples, and ChatIBD, an AI guideline assistant for IBD clinicians.
+Shaun Chuah is a Clinical Senior Research Fellow at the University of Glasgow and Honorary Consultant Gastroenterologist at NHS Greater Glasgow and Clyde. Alongside clinical work in inflammatory bowel disease (IBD), he builds the software his research runs on, including Foundry120, a research data platform that tracks more than 35,000 samples, and ChatIBD, an AI guideline assistant for IBD clinicians. He publishes as Cher Shiong Chuah (Chuah CS).
 
 Each post is also available as plain Markdown; the links below point to those copies.
 

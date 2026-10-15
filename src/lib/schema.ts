@@ -23,6 +23,8 @@ export function homeSchema() {
     {
       '@context': 'https://schema.org',
       ...personRef,
+      // Publications list the full name, cited as Chuah CS.
+      alternateName: ['Cher Shiong (Shaun) Chuah', 'Cher Shiong Chuah', 'Chuah CS'],
       image: new URL('/shaun-chuah-headshot.jpg', SITE.url).href,
       email: `mailto:${SITE.email}`,
       honorificSuffix: 'MBChB MRCP(UK) MD',
